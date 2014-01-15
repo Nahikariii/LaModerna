@@ -1,0 +1,47 @@
+@import 'custom_variables';
+@import '../../bower_components/bootstrap-stylus/stylus/bootstrap';
+
+.header {
+    @extends .row;
+    .logo {
+        @extends .col-md-3;
+        @extends .col-lg-3;
+    }
+    .menu {
+        @extends .col-md-6;
+        @extends .col-lg-6;
+    }
+    margin-top: 20px;
+    width:100%;
+}
+
+.navbar {
+    width: 90%;
+}
+.carousel {
+    width: 900px;
+    height: 200px;
+    margin: 10px auto;
+}
+
+#highlights {
+    @extends .row;
+    .highlight-element {
+        @extends .col-sm-4;
+        @extends .col-md-4;
+        @extends .col-lg-4;
+        h4 {
+            color: $main-color;
+            font-weight: bold;
+        }
+        p {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            width: 80%;
+        }
+    }
+    text-align: center;
+    margin-top: 50px;
+    margin: 50px auto;
+}
