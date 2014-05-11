@@ -1,20 +1,8 @@
-<div class="highlight-element">
-    <img class="img-circle" src="holder.js/140x140">
-    <h4>Pizza</h4>
-    <p>El secreto esta en la mas. Cupcake ipsum dolor sit amet gummies. I love biscuit halvah powder chocolate bar gummies gummi bears. Gummi bears applicake croissant lemon drops jelly. Tart pastry soufflé unerdwear.com unerdwear.com jujubes.</p>
-    <a class="btn btn-default" href="#" role="button">Leer más >></a>
-</div>
-
-<div class="highlight-element">
-    <img class="img-circle" src="holder.js/140x140">
-    <h4>Ofrecemos</h4>
-    <p>Contratos personalizados, amplia gama de productos y clientes satisfechos.upcake ipsum dolor sit amet gummies. I love biscuit halvah powder chocolate bar gummies gummi bears. Gummi bears applicake croissant lemon drops jelly. Tart pastry soufflé unerdwear.com unerdwear.com jujubes.</p>
-    <a class="btn btn-default" href="#" role="button">Informáte >></a>
-</div>
-
-<div class="highlight-element">
-    <img class="img-circle" src="holder.js/140x140">
-    <h4>Contactanos</h4>
-    <p>Cupcake ipsum dolor sit amet gummies. I love biscuit halvah powder chocolate bar gummies gummi bears. Gummi bears applicake croissant lemon drops jelly. Tart pastry soufflé unerdwear.com unerdwear.com jujubes.</p>
-    <a class="btn btn-default" href="#" role="button">Leer más >></a>
-</div>
+{{#each highlight}}
+	<div class="highlight-element">
+		<img class="img-circle" src= {{ photo }}>
+		<h4>{{ title }}</h4>
+		<p>{{ content }}</p>
+		<a class="btn btn-default" href="#" role="button">{{ continue }}</a>
+	</div>
+{{/each}}

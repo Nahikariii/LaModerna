@@ -8,31 +8,25 @@
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
-        <div class="item">
-            <img src="holder.js/900x200" alt="hola">
-            <div class="carousel-caption">
-                Productos artesanales
-            </div>
-        </div>
-        <div class="item active">
-            <img src="holder.js/900x200" alt="hola2">
-            <div class="carousel-caption">
-                Matería prima de primera calidad
-            </div>
-        </div>
-        <div class="item">
-            <img src="holder.js/900x200" alt="hola3">
-            <div class="carousel-caption">
-                Muchas cosas
-            </div>
-        </div>
-    </div>
+		{{#each slider}}
+			{{#if active}}
+				<div class="item active">
+		    {{else}}
+				<div class="item">
+		    {{/if}}
+				<img src={{ photo }}>
+				<div class="carousel-caption">
+					{{ title }}
+				</div>
+        	</div>
+		{{/each}}
+   </div>
 
     <!-- Controls -->
     <a class="left carousel-control" href="#carousel-main" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
+		<span class="glyphicon glyphicon-chevron-left"></span>
     </a>
     <a class="right carousel-control" href="#carousel-main" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
+		<span class="glyphicon glyphicon-chevron-right"></span>
     </a>
 </div>
