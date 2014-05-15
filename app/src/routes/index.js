@@ -9,12 +9,11 @@ var IndexRoute = Backbone.Router.extend({
 	},
 
 	defaultRoute: function(actions){
-		var index_view = new IndexView({el: $("body")});
+		var indexView = new IndexView({el: $("body")});
 	},
 	productsRoute: function(query){
-		var category_view = new CategoryView({el: $("body")});
+		var categoryView = new CategoryView({el: $("body"), category: query});
 	}
-
 });
 
 module.exports = IndexRoute;
