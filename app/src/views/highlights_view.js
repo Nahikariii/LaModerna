@@ -27,7 +27,7 @@ var HighlightsView = backbone.View.extend({
 	},
 	template: require('../../views/highlights.hbs'),
 	render: function(){
-		this.$el.html(this.template({highlight: data}));
+		this.$el.html(this.template({highlights: data}));
 	}
 });
 
