@@ -720,7 +720,6 @@ pre code {
 .col-lg-10,
 .col-lg-11,
 .col-lg-12,
-.header .logo,
 .header .menu,
 #highlights .highlight-element,
 #products .product-element {
@@ -950,7 +949,6 @@ pre code {
   .col-md-9,
   .col-md-10,
   .col-md-11,
-  .header .logo,
   .header .menu,
   #highlights .highlight-element,
   #products .product-element {
@@ -963,7 +961,6 @@ pre code {
     width: 16.666666666666664%;
   }
   .col-md-3,
-  .header .logo,
   #products .product-element {
     width: 25%;
   }
@@ -1120,7 +1117,6 @@ pre code {
   .col-lg-9,
   .col-lg-10,
   .col-lg-11,
-  .header .logo,
   .header .menu,
   #highlights .highlight-element,
   #products .product-element {
@@ -1133,7 +1129,6 @@ pre code {
     width: 16.666666666666664%;
   }
   .col-lg-3,
-  .header .logo,
   #products .product-element {
     width: 25%;
   }
@@ -5739,21 +5734,20 @@ td.visible-print {
   }
 }
 .header {
-  margin-top: 20px;
+  position: absolute;
   width: 100%;
 }
 .navbar {
   width: 90%;
 }
 .carousel {
-  width: 900px;
-  height: 200px;
-  margin: 10px auto;
+  width: 100%;
+  height: 400px;
 }
 #highlights {
   text-align: center;
   margin-top: 50px;
-  margin: 50px auto;
+  margin: 10px auto;
 }
 #highlights .highlight-element h4 {
   color: #f88017;
@@ -5768,7 +5762,7 @@ td.visible-print {
 #products {
   text-align: center;
   margin-top: 50px;
-  margin: 50px auto;
+  margin: 10px auto;
 }
 #products .product-element h4 {
   color: #f88017;

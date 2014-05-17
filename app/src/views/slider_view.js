@@ -3,16 +3,16 @@ var backbone = require('backbone');
 var data = [
     {
 		'title': 'Productos artesanales',
-		'photo' : 'holder.js/900x200',
+		'photo' : 'holder.js/1600x400',
 		'active': true,
     },
     {
 		'title': 'Matería prima de primera calidd',
-		'photo' : 'holder.js/900x200',
+		'photo' : 'holder.js/1600x400',
     },
     {
 		'title': 'Muchas cosas',
-		'photo' : 'holder.js/900x200',
+		'photo' : 'holder.js/1600x400',
     }
 ]
 
