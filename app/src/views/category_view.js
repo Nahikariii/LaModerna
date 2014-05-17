@@ -4,28 +4,51 @@ var ContentHeaderView = require('./content_header');
 
 var data = {
 	'panaderia' : {
-		'photo': 'holder.js/1600x400',
+		 //'photo': 'holder.js/1400x400',
+		'photo': 'http://panalino.com/wp-content/uploads/2013/10/slide6.jpg',
 		'products':	[
 			{
 				'productTitle': 'Producto 1',
 				'description' : 'Cupcake ipsum dolor sit amet. Jelly beans dragée gummi bears unerdwear.',
-				'photo' : 'holder.js/140x140',
+			 	 //'photo' : 'holder.js/140x140',
+				'photo' : '/images/bollo.jpg',
 			},
 			{
 				'productTitle': 'Producto 2',
 				'description' : 'Cupcake ipsum dolor sit amet. Jelly beans dragée gummi bears unerdwear.',
-				'photo' : 'holder.js/140x140',
+				'photo' : '/images/bollo.jpg',
 			},
 			{
 				'productTitle': 'Producto 3',
 				'description' : 'Cupcake ipsum dolor sit amet. Jelly beans dragée gummi bears unerdwear.',
-				'photo' : 'holder.js/140x140',
+				'photo' : '/images/bollo.jpg',
 			},
 			{
 				'productTitle': 'Producto 4',
 				'description' : 'Cupcake ipsum dolor sit amet. Jelly beans dragée gummi bears unerdwear.',
-				'photo' : 'holder.js/140x140',
+				'photo' : '/images/bollo.jpg',
+			},
+			{
+				'productTitle': 'Producto 1',
+				'description' : 'Cupcake ipsum dolor sit amet. Jelly beans dragée gummi bears unerdwear.',
+				'photo' : '/images/bollo.jpg',
+			},
+			{
+				'productTitle': 'Producto 2',
+				'description' : 'Cupcake ipsum dolor sit amet. Jelly beans dragée gummi bears unerdwear.',
+				'photo' : '/images/bollo.jpg',
+			},
+			{
+				'productTitle': 'Producto 3',
+				'description' : 'Cupcake ipsum dolor sit amet. Jelly beans dragée gummi bears unerdwear.',
+				'photo' : '/images/bollo.jpg',
+			},
+			{
+				'productTitle': 'Producto 4',
+				'description' : 'Cupcake ipsum dolor sit amet. Jelly beans dragée gummi bears unerdwear.',
+				'photo' : '/images/bollo.jpg',
 			}
+	
 		]
 	}
 }

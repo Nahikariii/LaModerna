@@ -3,7 +3,8 @@ var backbone = require('backbone');
 var data = [
     {
 		'title': 'Productos artesanales',
-		'photo' : 'holder.js/1600x400',
+		 //'photo' : 'holder.js/1600x400',
+		'photo' : 'http://panalino.com/wp-content/uploads/2013/10/slide8.jpg',
 		'active': true,
     },
     {

@@ -49,7 +49,8 @@ a:active,
 a:hover {
   outline: 0;
 }
-h1 {
+h1,
+.content-title {
   font-size: 2em;
   margin: 0.67em 0;
 }
@@ -399,7 +400,8 @@ h6,
 .h3,
 .h4,
 .h5,
-.h6 {
+.h6,
+.content-title {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
@@ -415,14 +417,16 @@ h6 small,
 .h3 small,
 .h4 small,
 .h5 small,
-.h6 small {
+.h6 small,
+.content-title small {
   font-weight: normal;
   line-height: 1;
   color: #999;
 }
 h1,
 h2,
-h3 {
+h3,
+.content-title {
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -433,7 +437,8 @@ h6 {
   margin-bottom: 10px;
 }
 h1,
-.h1 {
+.h1,
+.content-title {
   font-size: 36px;
 }
 h2,
@@ -5762,6 +5767,9 @@ td.visible-print {
   text-align: center;
   margin: -60px auto;
 }
+#products .product-element {
+  margin-bottom: 40px;
+}
 #products .product-element h4 {
   color: #f88017;
   font-weight: bold;
@@ -5774,4 +5782,12 @@ td.visible-print {
 }
 .img-circle {
   border: 2px dashed #908988;
+}
+.content-title {
+  position: absolute;
+  margin-left: 50px;
+  color: #fff;
+  margin-top: -150px;
+  text-transform: capitalize;
+  font-size: 60px;
 }
