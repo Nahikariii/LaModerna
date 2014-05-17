@@ -1074,7 +1074,8 @@ pre code {
   .col-md-offset-2 {
     margin-left: 16.666666666666664%;
   }
-  .col-md-offset-3 {
+  .col-md-offset-3,
+  .header .menu {
     margin-left: 25%;
   }
   .col-md-offset-4 {
@@ -1117,7 +1118,6 @@ pre code {
   .col-lg-9,
   .col-lg-10,
   .col-lg-11,
-  .header .menu,
   #highlights .highlight-element,
   #products .product-element {
     float: left;
@@ -1139,8 +1139,7 @@ pre code {
   .col-lg-5 {
     width: 41.66666666666667%;
   }
-  .col-lg-6,
-  .header .menu {
+  .col-lg-6 {
     width: 50%;
   }
   .col-lg-7 {
@@ -5736,9 +5735,10 @@ td.visible-print {
 .header {
   position: absolute;
   width: 100%;
+  margin-top: 20px;
 }
-.navbar {
-  width: 90%;
+.header .menu .navbar-nav > li {
+  padding-left: 15px;
 }
 .carousel {
   width: 100%;
@@ -5746,8 +5746,7 @@ td.visible-print {
 }
 #highlights {
   text-align: center;
-  margin-top: 50px;
-  margin: 10px auto;
+  margin: 20px auto;
 }
 #highlights .highlight-element h4 {
   color: #f88017;
@@ -5761,8 +5760,7 @@ td.visible-print {
 }
 #products {
   text-align: center;
-  margin-top: 50px;
-  margin: 10px auto;
+  margin: -60px auto;
 }
 #products .product-element h4 {
   color: #f88017;
@@ -5773,4 +5771,7 @@ td.visible-print {
   margin-right: auto;
   text-align: center;
   width: 80%;
+}
+.img-circle {
+  border: 2px dashed #908988;
 }
