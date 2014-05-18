@@ -24,6 +24,7 @@ app.get('/application.js', function (request, response){
         if (err){
             console.error(err);
             response.writeHead(405);
+			response.setHeader("Access-Control-Allow-Origin", "*.google.com");
             return response.end(err);
         }
         response.writeHead(200, {'Content-type':'text/javascript'});
