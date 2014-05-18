@@ -12,7 +12,7 @@
     }
 	position: absolute;
     width:100%;
-	margin-top: 20px;
+	top: 20px;
 }
 
 .carousel {
@@ -97,6 +97,15 @@
 	text-transform: capitalize;
 	font-size: 60px;
 }
+.orange {
+	@extends h1;
+	margin-left: 50px;
+	text-transform: capitalize;
+	font-size: 60px;
+	color: $main-color;
+	margin-top: 90px;
+	margin-bottom: 30px;
+}
 
 .map {
 	@extends .row;
@@ -108,4 +117,38 @@
 	}
 	width: 100%;
 	margin-top: 20px;
+}
+
+.history {
+	.img {
+		float: left;
+	}
+	.content {
+		@extends .row;
+		.left {
+			@extends .col-md-offset-1;
+			@extends .col-md-3;
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+		.right {
+			@extends .col-md-7;
+			padding-top: 80px;
+		}
+		margin-bottom: 40px;
+	}	
+	.inverse-content {
+		@extends .row;
+		.right {
+			@extends .col-md-3;
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+		.left {
+			@extends .col-md-offset-1;
+			@extends .col-md-7;
+			padding-top: 80px;
+		}
+		margin-bottom: 40px;
+	}
 }
