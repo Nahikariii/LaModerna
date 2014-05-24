@@ -175,6 +175,36 @@ body > .content {
 	.video {
 		text-align: center;
 	}
+	.datos-contacto {
+		@extends .row;
+		@extends .col-md-offset-3;
+		@extends .col-md-8;
+		div {
+			margin-bottom: 10px;
+		}
+		.glyphicon {
+			color: $main-color;
+			font-weight: bold;
+			font-size: 25px;
+		}
+		.phone-number, .email {
+			margin-left: 5px;
+			font-size: 2em;
+		}
+		.address {
+			display: block;
+			font-size: 1.5em;
+			margin-left: 5px;
+			&.street {
+				display: inline-block;
+			}
+			&:not(.street){
+				margin-left: 35px;
+			}
+		}
+		text-align: left;
+		margin-top: 30px;
+	}
 }
 
 ol.labels-list {
