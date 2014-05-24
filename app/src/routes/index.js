@@ -4,6 +4,8 @@ var CategoryView = require("../views/category_view");
 var FindUsView = require("../views/findus_view");
 var HistoryView = require("../views/history_view");
 var PizzaView = require("../views/pizza_view");
+var BusinessView = require("../views/business_view");
+var ContactView = require("../views/contact_view");
 
 var IndexRoute = Backbone.Router.extend({
 	routes: {
@@ -11,6 +13,8 @@ var IndexRoute = Backbone.Router.extend({
 	    "tiendas" : "findUsRoute",
 		"historia": "historyRoute",
 		"pizza": "pizzaRoute",
+		"contacto": "contactRoute",
+		"hosteleria": "businessRoute",
 		"*actions": "defaultRoute"  //matches any route
 	},
 
@@ -28,7 +32,15 @@ var IndexRoute = Backbone.Router.extend({
 	},
 	pizzaRoute: function(query){
 		var pizzaView = new PizzaView({el: $("body")});
+	},
+	contactRoute: function(query){
+		var contactView = new ContactView({el: $("body")});
+	},
+	businessRoute: function(query){
+		var businessView = new BusinessView({el: $("body")});
 	}
+
+
 
 
 });
