@@ -97,14 +97,17 @@
 	text-transform: capitalize;
 	font-size: 60px;
 }
-.orange {
+.page-title {
 	@extends h1;
 	margin-left: 50px;
 	text-transform: capitalize;
 	font-size: 60px;
-	color: $main-color;
 	margin-top: 90px;
 	margin-bottom: 30px;
+}
+
+.orange {
+	color: $main-color;
 }
 
 .map {
@@ -156,4 +159,61 @@
 		background-color: $main-color-light;
 	}
 	margin-bottom: 40px;
+}
+
+.content {
+	@extends .row;
+	@extends .col-md-offset-1;
+	@extends .col-md-10;
+	.block {
+		margin-bottom: 30px;
+	}
+	a {
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	.video {
+		text-align: center;
+	}
+}
+
+ol.labels-list {
+	list-style-type: none;
+	list-style-type: decimal !ie; /*IE 7- hack*/
+
+	margin: 0;
+	margin-left: 1em;
+	padding: 0;
+
+	counter-reset: li-counter;
+}
+
+ol.labels-list > li{
+	position: relative;
+	margin-bottom: 1.5em;
+	padding: 1.5em;
+	background-color: $tertiary-color-light;
+}
+
+ol.labels-list > li:before {
+	display: inline-block;
+	position: absolute;
+	top: -0.3em;
+	left: -0.5em;
+	width: 1.8em;
+	height: 1.2em;
+
+	font-size: 2em;
+	line-height: 1.2;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	background-color: $main-color;
+
+	rotate(-20deg);
+	z-index: 99;
+	overflow: hidden;
+
+	content: counter(li-counter);
+	counter-increment: li-counter;
 }
