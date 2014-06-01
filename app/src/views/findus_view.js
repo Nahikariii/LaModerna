@@ -7,34 +7,52 @@ var pagePhoto = "/images/tienda.jpg";
 
 var shops = [
 	{
-		"title": "Tienda 1",
-		"address": "Aita Elorriaga 3, Mungia",
+		"title": "Mungia",
+		"address": "C/ Aita Elorriaga 8, 48100",
+		"timetable": "L-V: 7:00-14:30, 16:00-20:30<br> S-D: 8:00-14:00",
+		"telephone": "94 615 63 54",
+	},
+	{
+		"title": "Mungia",
+		"address": "C/ Errekatxu 3, 48100",
+		"timetable": "L-V: 6:30-14:00, 17:00-21:00<br> S-D: 7:30-14:30",
+		"telephone": "94 674 82 07",
+	},
+	{
+		"title": "Derio",
+		"address": "Gernikako Arbola Etorbidea 6, Derio 48160",
 		"timetable": "L-V: 9:00-18:00 <br> S: 9:00-13:00 <br> D: cerrado",
 		"telephone": "941232534",
 	},
 	{
-		"title": "Tienda 2",
-		"address": "Aita Elorriaga 3, Mungia",
+		"title": "Algorta",
+		"address": "C/ Arene Azpi 4, Algorta 48990 ",
 		"timetable": "L-V: 9:00-18:00 <br> S: 9:00-13:00 <br> D: cerrado",
 		"telephone": "941232534",
 	},
 	{
-		"title": "Tienda 2",
-		"address": "Aita Elorriaga 3, Mungia",
+		"title": "Gorliz",
+		"address": "C/ Eloisa Artaza Local 3ºG, Gorliz 48630",
 		"timetable": "L-V: 9:00-18:00 <br> S: 9:00-13:00 <br> D: cerrado",
 		"telephone": "941232534",
 	},
 	{
-		"title": "Tienda 2",
-		"address": "Aita Elorriaga 3, Mungia",
+		"title": "Getxo",
+		"address": "C/ Telletxe 13-2, 48990",
 		"timetable": "L-V: 9:00-18:00 <br> S: 9:00-13:00 <br> D: cerrado",
 		"telephone": "941232534",
 	},
 	{
-		"title": "Tienda 2",
-		"address": "Aita Elorriaga 3, Mungia",
+		"title": "Bilbao",
+		"address": "C/ Juan de Garay 13, 48003",
 		"timetable": "L-V: 9:00-18:00 <br> S: 9:00-13:00 <br> D: cerrado",
 		"telephone": "941232534",
+	},
+	{
+		"title": "Sestao",
+		"address": "C/ Villar y Villate 8, 48910",
+		"timetable": "L-V: 8:00-14:30, 17:00-21:00<br> S-D: 8:00-15:00",
+		"telephone": "94 496 14 44",
 	}
 ];
 
