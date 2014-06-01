@@ -63,11 +63,11 @@
 }
 
 .shops {
-    @extends .row;
+	.shops-block {
+		@extends .row;
+	}
     .shop-element {
-        @extends .col-sm-3;
         @extends .col-md-3;
-        @extends .col-lg-3;
         h4 {
             color: $main-color;
             font-weight: bold;
@@ -78,10 +78,10 @@
             text-align: center;
             width: 80%;
         }
-		margin-bottom: 40px;
+		margin-bottom: 50px;
     }
     text-align: center;
-    margin: 20px auto;
+	margin-top: 20px;
 }
 .img-circle {
 	border: 2px dashed $tertiary-color;

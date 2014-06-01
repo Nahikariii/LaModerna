@@ -40,9 +40,6 @@ var IndexRoute = Backbone.Router.extend({
 		var businessView = new BusinessView({el: $("body")});
 	}
 
-
-
-
 });
 
 module.exports = IndexRoute;
