@@ -1,6 +1,7 @@
 var backbone = require("backbone");
 var HeaderView = require("./header_view");
 var ContentHeaderView = require("./content_header");
+var FooterView = require("./footer_view");
 
 var data = {
 	"panaderia" : {
@@ -63,6 +64,7 @@ var CategoryView = backbone.View.extend({
         this.$el.html(this.template({category: category, products: data[category].products}));
 		var headerView = new HeaderView({el: $(".header")});
 		var contentHeader = new ContentHeaderView({el: $("#content-header"), headerText: category, photo: data[category].photo });
+        var footer_view = new FooterView({el: $("footer")});
 	}
 });
 

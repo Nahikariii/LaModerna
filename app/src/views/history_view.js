@@ -1,5 +1,6 @@
 var backbone = require("backbone");
 var HeaderView = require("./header_view");
+var FooterView = require("./footer_view");
 
 var HistoryView = backbone.View.extend({
 	initialize: function(){
@@ -9,6 +10,7 @@ var HistoryView = backbone.View.extend({
 	render: function(){
         this.$el.html(this.template());
 		var header_view = new HeaderView({el: $(".header")});
+        var footer_view = new FooterView({el: $("footer")});
 	}
 });
 

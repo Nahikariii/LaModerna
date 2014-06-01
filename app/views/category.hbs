@@ -1,15 +1,20 @@
-<div class="header">
+<div class="page-wrap products">
+	<div class="header">
+	</div>
+
+	<div id="content-header">
+	</div>
+
+	<div id="products">
+		{{#each products}}
+			<div class="product-element">
+				<img class="img-circle" src= {{ photo }}>
+				<h4>{{ productTitle }}</h4>
+				<p>{{ description }}</p>
+			</div>
+		{{/each}}
+	</div>
 </div>
 
-<div id="content-header">
-</div>
-
-<div id="products">
-	{{#each products}}
-		<div class="product-element">
-			<img class="img-circle" src= {{ photo }}>
-			<h4>{{ productTitle }}</h4>
-			<p>{{ description }}</p>
-		</div>
-	{{/each}}
-</div>
+<footer class="site-footer">
+</footer>

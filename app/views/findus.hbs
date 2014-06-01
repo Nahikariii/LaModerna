@@ -1,21 +1,26 @@
-<div class="header">
-</div>
+<div class="page-wrap">
+	<div class="header">
+	</div>
 
-<div id="content-header">
-</div>
+	<div id="content-header">
+	</div>
 
-<div class="map">
-	<div id="map_canvas">
+	<div class="map">
+		<div id="map_canvas">
+		</div>
+	</div>
+
+	<div class="shops">
+		{{#each shops}}
+			<div class="shop-element">
+				<h4>{{ title }}</h4>
+				<p>{{ address }}</p>
+				<p>{{{ timetable }}}</p>
+				<p>{{ telephone }}</p>
+			</div>
+		{{/each}}
 	</div>
 </div>
 
-<div class="shops">
-	{{#each shops}}
-		<div class="shop-element">
-			<h4>{{ title }}</h4>
-			<p>{{ address }}</p>
-			<p>{{{ timetable }}}</p>
-			<p>{{ telephone }}</p>
-		</div>
-	{{/each}}
-</div>
+<footer class="site-footer">
+</footer>

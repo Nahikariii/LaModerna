@@ -22,6 +22,7 @@
 
 #highlights {
     @extends .row;
+	padding-bottom: 50px;
     .highlight-element {
         @extends .col-sm-4;
         @extends .col-md-4;
@@ -44,9 +45,7 @@
 #products {
     @extends .row;
     .product-element {
-        @extends .col-sm-3;
         @extends .col-md-3;
-        @extends .col-lg-3;
         h4 {
             color: $main-color;
             font-weight: bold;
@@ -60,7 +59,7 @@
 		margin-bottom: 40px;
     }
     text-align: center;
-    margin: -60px auto;
+    margin: -($products-margin) auto;
 }
 
 .shops {
@@ -161,11 +160,11 @@
 	margin-bottom: 40px;
 }
 
-body > .content {
+.page-wrap > .content {
 	@extends .row;
-	@extends .col-md-offset-1;
-	@extends .col-md-10;
 	.block {
+		@extends .col-md-offset-1;
+		@extends .col-md-10;
 		margin-bottom: 30px;
 	}
 	a {
@@ -177,10 +176,10 @@ body > .content {
 	}
 	.datos-contacto {
 		@extends .row;
-		@extends .col-md-offset-3;
-		@extends .col-md-8;
-		div {
-			margin-bottom: 10px;
+		li {
+			@extends .col-md-offset-3;
+			@extends .col-md-8; 
+			list-style-type: none;
 		}
 		.glyphicon {
 			color: $main-color;
@@ -250,3 +249,56 @@ ol.labels-list > li:before {
 	content: counter(li-counter);
 	counter-increment: li-counter;
 }
+
+.business-graph {
+	@extends .row;
+	.line-1 {
+		@extends .col-md-offset-5;
+		@extends .col-md-2;
+		text-align: center;
+	}
+}
+
+html, body {
+  height: 100%;
+}
+
+.page-wrap {
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -$footer-height; 
+    &.products {
+	    margin-bottom: -$footer-height + products-margin;
+	}
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+.site-footer, .page-wrap:after {
+  /* .push must be the same height as footer */
+  height: $footer-height; 
+}
+
+.site-footer {
+  	background: orange;
+    nav {
+		@extends .navbar;
+		@extends .navbar-default;
+		margin-bottom: 0px;
+		background-color: $tertiary-color-light;
+		.brand {
+			font-size: 20px;
+			font-weight: bold;
+			padding-bottom: 10px;
+			padding-top: 10px;
+			padding-left: 5px;
+		}
+		> li {
+			text-align: center;
+		}
+	}	
+}
+

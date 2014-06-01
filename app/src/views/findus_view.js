@@ -1,6 +1,7 @@
 var backbone = require("backbone");
 var HeaderView = require("./header_view");
 var ContentHeaderView = require("./content_header");
+var FooterView = require("./footer_view");
 
 var pagePhoto = "/images/tienda.jpg";
 
@@ -53,6 +54,7 @@ var FindUsView = backbone.View.extend({
         this.$el.html(this.template({shops: shops}));
 		var headerView = new HeaderView({el: $(".header")});
 		var contentHeader = new ContentHeaderView({el: $("#content-header"), headerText: "Donde estamos", photo: pagePhoto });
+        var footer_view = new FooterView({el: $("footer")});
 		this.trigger("renderDone");
 	}
 });

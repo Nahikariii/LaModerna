@@ -2,6 +2,7 @@ var backbone = require("backbone");
 var HeaderView = require("./header_view");
 var SliderView = require("./slider_view");
 var HighlightsView = require("./highlights_view");
+var FooterView = require("./footer_view");
 
 var IndexView = backbone.View.extend({
 	initialize: function(){
@@ -13,6 +14,7 @@ var IndexView = backbone.View.extend({
 		var header_view = new HeaderView({el: $(".header")});
         var slider_view = new SliderView({el: $("#slider")});
         var highlights_view = new HighlightsView({el: $("#highlights")});
+        var footer_view = new FooterView({el: $("footer")});
 	}
 });
 
