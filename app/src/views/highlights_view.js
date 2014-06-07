@@ -14,14 +14,14 @@ var data = [
 		"photo" : "/images/pizza.jpg",
 		"content" : "Contratos personalizados, amplia gama de productos y clientes satisfechos.upcake ipsum dolor sit amet gummies. I love biscuit halvah powder chocolate bar gummies gummi bears. Gummi bears applicake croissant lemon drops jelly. Tart pastry soufflé unerdwear.com unerdwear.com jujube",
 		"continue" : "Informáte",
-		"href": "#"
+		"href": "#/hosteleria"
     },
     {
 		"title": "Contactanos",
 		"photo" : "/images/pizza.jpg",
 		"content" : "Cupcake ipsum dolor sit amet gummies. I love biscuit halvah powder chocolate bar gummies gummi bears. Gummi bears applicake croissant lemon drops jelly. Tart pastry soufflé unerdwear.com unerdwear.com jujubes",
 		"continue" : "Leer más",
-		"href": "#"
+		"href": "#/contacto"
     }
 ]
 
