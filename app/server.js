@@ -37,7 +37,7 @@ app.get("/application.js", function (request, response){
 	}
 });
 
-app.get("/", function (request, response){
+app.get("*", function (request, response){
 	response.render("homepage");
 });
 app.listen(3000);
