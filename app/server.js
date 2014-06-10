@@ -15,6 +15,7 @@ app.configure(function (){
 		debug: true
 	}));
 	app.use(express.static(__dirname + "/public"));
+	app.use(require('prerender-node'));
 });
 
 app.get("/application.js", function (request, response){
@@ -40,4 +41,4 @@ app.get("/application.js", function (request, response){
 app.get("*", function (request, response){
 	response.render("homepage");
 });
-app.listen(3000);
+app.listen(3001);

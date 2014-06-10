@@ -661,7 +661,7 @@ pre code {
 .header,
 #highlights,
 #products,
-.shops,
+.shops .shops-block,
 .map,
 .history .content,
 .history .inverse-content,
@@ -675,7 +675,7 @@ pre code {
 .header:before,
 #highlights:before,
 #products:before,
-.shops:before,
+.shops .shops-block:before,
 .map:before,
 .history .content:before,
 .history .inverse-content:before,
@@ -686,7 +686,7 @@ pre code {
 .header:after,
 #highlights:after,
 #products:after,
-.shops:after,
+.shops .shops-block:after,
 .map:after,
 .history .content:after,
 .history .inverse-content:after,
@@ -702,7 +702,7 @@ pre code {
 .header:after,
 #highlights:after,
 #products:after,
-.shops:after,
+.shops .shops-block:after,
 .map:after,
 .history .content:after,
 .history .inverse-content:after,
@@ -840,8 +840,7 @@ pre code {
   .col-sm-9,
   .col-sm-10,
   .col-sm-11,
-  #highlights .highlight-element,
-  .shops .shop-element {
+  #highlights .highlight-element {
     float: left;
   }
   .col-sm-1 {
@@ -850,8 +849,7 @@ pre code {
   .col-sm-2 {
     width: 16.666666666666664%;
   }
-  .col-sm-3,
-  .shops .shop-element {
+  .col-sm-3 {
     width: 25%;
   }
   .col-sm-4,
@@ -1190,8 +1188,7 @@ pre code {
   .col-lg-9,
   .col-lg-10,
   .col-lg-11,
-  #highlights .highlight-element,
-  .shops .shop-element {
+  #highlights .highlight-element {
     float: left;
   }
   .col-lg-1 {
@@ -1200,8 +1197,7 @@ pre code {
   .col-lg-2 {
     width: 16.666666666666664%;
   }
-  .col-lg-3,
-  .shops .shop-element {
+  .col-lg-3 {
     width: 25%;
   }
   .col-lg-4,
@@ -1900,7 +1896,7 @@ fieldset[disabled] .btn {
 }
 .btn-default {
   color: #333;
-  background-color: #fff;
+  background-color: #e9e7e7;
   border-color: #ccc;
 }
 .btn-default:hover,
@@ -1909,7 +1905,7 @@ fieldset[disabled] .btn {
 .btn-default.active,
 .open .dropdown-toggle.btn-default {
   color: #333;
-  background-color: #ebebeb;
+  background-color: #d7d4d4;
   border-color: #b4b4b4;
 }
 .btn-default:active,
@@ -1932,7 +1928,7 @@ fieldset[disabled] .btn-default:active,
 .btn-default.disabled.active,
 .btn-default[disabled].active,
 fieldset[disabled] .btn-default.active {
-  background-color: #fff;
+  background-color: #e9e7e7;
   border-color: #ccc;
 }
 .btn-primary {
@@ -5896,10 +5892,10 @@ td.visible-print {
 }
 .shops {
   text-align: center;
-  margin: 20px auto;
+  margin-top: 20px;
 }
 .shops .shop-element {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 .shops .shop-element h4 {
   color: #f88017;
