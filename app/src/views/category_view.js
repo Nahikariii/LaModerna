@@ -4,52 +4,83 @@ var ContentHeaderView = require("./content_header");
 var FooterView = require("./footer_view");
 
 var data = {
-	"panaderia" : {
+	"pancasero" : {
 		 //"photo": "holder.js/1400x400",
 		"photo": "http://panalino.com/wp-content/uploads/2013/10/slide6.jpg",
+		"headerText": "Pan casero",
 		"products":	[
 			{
 				"productTitle": "Producto 1",
 				"description" : "Cupcake ipsum dolor sit amet. Jelly beans dragée gummi bears unerdwear.",
-			 	 //"photo" : "holder.js/140x140",
-				"photo" : "/images/bollo.jpg",
+				"photo" : "/images/pan1.jpg",
+				"magnified-photo" : "/images/_DSF5132.jpg",
+				"reference": "C1345",
+				"quantity": "25",
+				"weight": "25"
 			},
 			{
 				"productTitle": "Producto 2",
 				"description" : "Cupcake ipsum dolor sit amet. Jelly beans dragée gummi bears unerdwear.",
-				"photo" : "/images/bollo.jpg",
+				"photo" : "/images/pan2.jpg",
+				"magnified-photo" : "/images/_DSF5132.jpg",
+				"reference": "C1345",
+				"quantity": "25",
+				"weight": "25"
 			},
 			{
 				"productTitle": "Producto 3",
 				"description" : "Cupcake ipsum dolor sit amet. Jelly beans dragée gummi bears unerdwear.",
-				"photo" : "/images/bollo.jpg",
+				"photo" : "/images/pan3.jpg",
+				"magnified-photo" : "/images/_DSF5132.jpg",
+				"reference": "C1345",
+				"quantity": "25",
+				"weight": "25"
 			},
 			{
 				"productTitle": "Producto 4",
 				"description" : "Cupcake ipsum dolor sit amet. Jelly beans dragée gummi bears unerdwear.",
-				"photo" : "/images/bollo.jpg",
+				"photo" : "/images/pan4.jpg",
+				"magnified-photo" : "/images/_DSF5132.jpg",
+				"reference": "C1345",
+				"quantity": "25",
+				"weight": "25"
 			},
 			{
-				"productTitle": "Producto 1",
+				"productTitle": "Producto 5",
 				"description" : "Cupcake ipsum dolor sit amet. Jelly beans dragée gummi bears unerdwear.",
-				"photo" : "/images/bollo.jpg",
+				"photo" : "/images/pan4.jpg",
+				"magnified-photo" : "/images/_DSF5132.jpg",
+				"reference": "C1345",
+				"quantity": "25",
+				"weight": "25"
 			},
 			{
-				"productTitle": "Producto 2",
+				"productTitle": "Producto 6",
 				"description" : "Cupcake ipsum dolor sit amet. Jelly beans dragée gummi bears unerdwear.",
-				"photo" : "/images/bollo.jpg",
+				"photo" : "/images/pan3.jpg",
+				"magnified-photo" : "/images/_DSF5132.jpg",
+				"reference": "C1345",
+				"quantity": "25",
+				"weight": "25"
 			},
 			{
-				"productTitle": "Producto 3",
+				"productTitle": "Producto 7",
 				"description" : "Cupcake ipsum dolor sit amet. Jelly beans dragée gummi bears unerdwear.",
-				"photo" : "/images/bollo.jpg",
+				"photo" : "/images/pan2.jpg",
+				"magnified-photo" : "/images/_DSF5132.jpg",
+				"reference": "C1345",
+				"quantity": "25",
+				"weight": "25"
 			},
 			{
-				"productTitle": "Producto 4",
+				"productTitle": "Producto 8",
 				"description" : "Cupcake ipsum dolor sit amet. Jelly beans dragée gummi bears unerdwear.",
-				"photo" : "/images/bollo.jpg",
+				"photo" : "/images/pan1.jpg",
+				"magnified-photo" : "/images/_DSF5132.jpg",
+				"reference": "C1345",
+				"quantity": "25",
+				"weight": "25"
 			}
-	
 		]
 	}
 }
@@ -60,10 +91,10 @@ var CategoryView = backbone.View.extend({
 	},
 	template: require("../../views/category.hbs"),
 	render: function(category){
-		products = [];
-        this.$el.html(this.template({category: category, products: data[category].products}));
+		var categoryData = data[category];
+        this.$el.html(this.template({category: categoryData.headerText, products: categoryData.products}));
 		var headerView = new HeaderView({el: $(".header")});
-		var contentHeader = new ContentHeaderView({el: $("#content-header"), headerText: category, photo: data[category].photo });
+		var contentHeader = new ContentHeaderView({el: $("#content-header"), headerText: categoryData.headerText, photo: categoryData.photo });
         var footer_view = new FooterView({el: $("footer")});
 	}
 });
