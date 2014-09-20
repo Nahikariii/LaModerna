@@ -8,9 +8,21 @@
 	<div id="products">
 		{{#each products}}
 			<div class="product-element">
-				<img class="img-circle" src= {{ photo }}>
-				<h4>{{ productTitle }}</h4>
-				<p>{{ description }}</p>
+				<div class="product-image">
+					<img class="img-circle" data-toggle="magnify" src= {{ photo }} data-magnified-src= {{ magnified-photo }}>
+				</div>
+				<h4 class="title">{{ productTitle }}</h4>
+				<h4 class="reference">{{ reference }}</h4>
+				<span>
+					<img src="/images/empty_box.png">
+					{{ quantity }} ud.
+				</span>
+				<span>
+					<img src="/images/bread.png">
+					{{ weight }} gr.
+				</span>
+
+				<!-- <p>{{ description }}</p> -->
 			</div>
 		{{/each}}
 	</div>
