@@ -4,24 +4,24 @@ var data = [
     {
 		"title": "Pizza",
 		 //"photo" : "holder.js/140x140",
-		 "photo" : "/images/pizza.jpg",
-		"content" : "El secreto esta en la mas. Cupcake ipsum dolor sit amet gummies. I love biscuit halvah powder chocolate bar gummies gummi bears. Gummi bears applicake croissant lemon drops jelly. Tart pastry soufflé unerdwear.com unerdwear.com jujube",
+		"photo" : "/images/pizza.jpg",
+	    "content":"Wafer tart jelly muffin marzipan. Toffee chupa chups oat cake applicake oat cake jelly beans lollipop cheesecake jelly. Croissant dragée halvah. Gummies pastry chocolate cake caramels jelly dragée chocolate cake icing.",
 		"continue" : "Leer más",
-		"href": "#/pizza"
+		"href": "pizza"
     },
     {
 		"title": "Ofrecemos",
 		"photo" : "/images/pizza.jpg",
-		"content" : "Contratos personalizados, amplia gama de productos y clientes satisfechos.upcake ipsum dolor sit amet gummies. I love biscuit halvah powder chocolate bar gummies gummi bears. Gummi bears applicake croissant lemon drops jelly. Tart pastry soufflé unerdwear.com unerdwear.com jujube",
+		"content" : "Como productores exclusivos de pan nos aseguramos de ofrecer una amplia gama de productos de alta calidad, desde el pan casero de toda la vida hasta panes innovadores con sabores de todo tipo.",
 		"continue" : "Informáte",
-		"href": "#/hosteleria"
+		"href": "hosteleria"
     },
     {
 		"title": "Contactanos",
 		"photo" : "/images/pizza.jpg",
-		"content" : "Cupcake ipsum dolor sit amet gummies. I love biscuit halvah powder chocolate bar gummies gummi bears. Gummi bears applicake croissant lemon drops jelly. Tart pastry soufflé unerdwear.com unerdwear.com jujubes",
+		"content" : "Si tienes alguna duda sobre alguno de nuestros productos, te gustaría hacernos una sugerencia o simplemente quieres decirnos lo mucho que te gusta alguno de nuestros productos no dudes en ponerte en contacto con nosotros. Estaremos encantados de atenderte.",
 		"continue" : "Leer más",
-		"href": "#/contacto"
+		"href": "contacto"
     }
 ]
 
