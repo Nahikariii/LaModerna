@@ -3,7 +3,7 @@ var HeaderView = require("./header_view");
 var ContentHeaderView = require("./content_header");
 var FooterView = require("./footer_view");
 
-var pagePhoto = "/images/tienda.jpg";
+var pagePhoto = "/images/sestaoMODERNA.jpg";
 
 var shops = [
 	{
@@ -38,7 +38,7 @@ var shops = [
 	},
 	{
 		"title": "Getxo",
-		"address": "C/ Telletxe 13-2, 48990",
+		"address": "Avd. de los Chopos 35, 48990",
 		"timetable": "L-V: 9:00-18:00 <br> S: 9:00-13:00 <br> D: cerrado",
 		"telephone": "941232534",
 	},
