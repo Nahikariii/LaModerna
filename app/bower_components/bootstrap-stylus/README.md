@@ -1,11 +1,7 @@
-Bootstrap Stylus 3.0.0
+Bootstrap Stylus 3.3.0
 ======================
 
-Port of the amazing [Bootstrap 3.0.0](https://github.com/twbs/bootstrap) to [Stylus 0.32.1](http://learnboost.github.com/stylus/).
-
-This version does not have any dependencies on [nib](https://github.com/visionmedia/nib). 
-
-( _Note: Bootstrap Stylus must be imported before nib so that Stylus libs are not transpiled as nib mixins_ )
+Port of the amazing [Bootstrap 3.3.0](https://github.com/twbs/bootstrap) to [Stylus 0.47.0](http://learnboost.github.com/stylus/).
 
 There might be some slight color differences due to the differences between the color functions in LESS and those in Stylus.
 
@@ -44,7 +40,7 @@ When completed, you'll be able to run the various Grunt commands provided from t
 `grunt dist` creates the `/dist` directory with compiled files. **Uses [UglifyJS](http://lisperator.net/uglifyjs/).**
 
 #### Legacy 2.3.2 Theme - `grunt theme`
-This will compile the `theme.styl separately and output it to the `/dist` folder.
+This will compile the `theme.styl` separately and output it to the `/dist` folder.
 
 #### Watch - `grunt watch`
 This is a convenience method for watching just Stylus files and automatically building them whenever you save.

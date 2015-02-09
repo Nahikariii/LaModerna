@@ -13,13 +13,7 @@ module.exports = function(grunt) {
       options: {
         paths: ['stylus'],
         urlfunc: 'embedurl', // use embedurl('test.png') in our code to trigger Data URI embedding
-        use: [
-          require('nib')
-        ]
       },
-      import: [
-        'nib'
-      ],
       files: {
         'dist/bootstrap.css': 'stylus/bootstrap.styl' // 1:1 compile
       }
@@ -28,24 +22,17 @@ module.exports = function(grunt) {
     theme: {
       options: {
         paths: ['stylus'],
-        urlfunc: 'embedurl', // use embedurl('test.png') in our code to trigger Data URI embedding
-        use: [
-          require('nib')
-        ]
-        },
-        import: [
-          'nib'
-        ],
-        files: {
-          'dist/theme.css': 'stylus/theme.styl' // 1:1 compile
-        }
+        urlfunc: 'embedurl',
+      },
+      files: {
+        'dist/theme.css': 'stylus/theme.styl' // 1:1 compile
       }
-
+    }
   },
 
   watch: {
     css: {
-      files: 'stylus/**/*.styl',
+      files: 'stylus/*.styl',
       tasks: ['stylus'],
       options: {
         debounceDelay: 250
@@ -55,6 +42,33 @@ module.exports = function(grunt) {
 
   clean: {
     dist: ["dist/*.css", "dist/*.js"]
+  },
+
+  autoprefixer: {
+    options: {
+      browsers: [
+        'Android 2.3',
+        'Android >= 4',
+        'Chrome >= 20',
+        'Firefox >= 24', // Firefox 24 is the latest ESR
+        'Explorer >= 8',
+        'iOS >= 6',
+        'Opera >= 12',
+        'Safari >= 6'
+      ]
+    },
+    core: {
+      options: {
+        map: true
+      },
+      src: 'dist/bootstrap.css'
+    },
+    theme: {
+      options: {
+        map: true
+      },
+      src: 'dist/theme.css'
+    }
   },
 
   cssmin: {
@@ -73,18 +87,20 @@ module.exports = function(grunt) {
   uglify: {
     dist: {
       files: {
-        'dist/bootstrap.min.js': ['js/transition.js',
-                                  'js/alert.js',
-                                  'js/button.js',
-                                  'js/carousel.js',
-                                  'js/collapse.js',
-                                  'js/dropdown.js',
-                                  'js/modal.js',
-                                  'js/tooltip.js',
-                                  'js/popover.js',
-                                  'js/scrollspy.js',
-                                  'js/tab.js',
-                                  'js/affix.js']
+        'dist/bootstrap.min.js': [
+            'js/transition.js',
+            'js/alert.js',
+            'js/button.js',
+            'js/carousel.js',
+            'js/collapse.js',
+            'js/dropdown.js',
+            'js/modal.js',
+            'js/tooltip.js',
+            'js/popover.js',
+            'js/scrollspy.js',
+            'js/tab.js',
+            'js/affix.js'
+        ]
       }
     }
   },
@@ -100,6 +116,5 @@ module.exports = function(grunt) {
 
   grunt.registerTask('dist', ['clean','stylus:bootstrap', 'cssmin:bootstrap', 'uglify']);
   grunt.registerTask('theme', ['stylus:theme', 'cssmin:theme']);
-  grunt.registerTask('watch', ['stylus:bootstrap', 'watch:css']);
   grunt.registerTask('build', ['clean','stylus:bootstrap', 'stylus:theme', 'cssmin:bootstrap', 'cssmin:theme', 'uglify']);
 };
