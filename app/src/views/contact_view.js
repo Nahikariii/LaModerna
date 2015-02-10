@@ -3,7 +3,7 @@ var HeaderView = require("./header_view");
 var ContentHeaderView = require("./content_header");
 var FooterView = require("./footer_view");
 
-var pagePhoto = "/images/contacto.jpg";
+var pagePhoto = "/images/test1.jpg";
 
 var ContactView = backbone.View.extend({
 	initialize: function(){
