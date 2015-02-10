@@ -2,18 +2,17 @@ var backbone = require("backbone");
 
 var data = [
     {
-		"title": "Productos artesanales",
-		 //"photo" : "holder.js/1600x400",
-		"photo" : "http://panalino.com/wp-content/uploads/2013/10/slide8.jpg",
+		"title": "Innovación",
+		"photo" : "/images/testpanes.jpg",
 		"active": true,
     },
     {
-		"title": "Matería prima de primera calidd",
-		"photo" : "holder.js/1600x400",
+		"title": "Diferenciación",
+		"photo" : "/images/slider-panes.jpg",
     },
     {
-		"title": "Muchas cosas",
-		"photo" : "holder.js/1600x400",
+		"title": "Calidad",
+		"photo" : "/images/testpan.jpg",
     }
 ]
 
