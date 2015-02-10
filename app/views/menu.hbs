@@ -1,18 +1,34 @@
 <nav class="navbar navbar-default" role="navigation">
-    <ul class="nav navbar-nav">
-          <li><a href="#">Inicio</a></li>
-          <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Productos <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="/productos/pancasero">Pan casero</a></li>
-                  <li><a href="/productos/panclasico">Pan clasico</a></li>
-                  <li><a href="/productos/panintegral">Pan integral</a></li>
-                  <li><a href="/productos/panburger">Pan hamburguesa</a></li>
-                </ul>
-          </li>
-          <li><a href="/hosteleria">Hostelería</a></li>
-          <li><a href="/tiendas">Donde estamos</a></li>
-          <li><a href="/historia">Historia</a></li>
-          <li><a href="/contacto">Contacto</a></li>
-    </ul>
+    <div class="navbar-header">
+    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+     		<span class="icon-bar"></span>
+      		<span class="icon-bar"></span>
+      		<span class="icon-bar"></span>
+    	</button>    
+		<a class="navbar-brand" href="#">Menú</a>
+  	</div>
+	<div class="navbar-collapse collapse">
+		<ul class="nav navbar-nav">
+			  <li><a href="#">Inicio</a></li>
+			  <li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown">Productos <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+					  <li role="presentation" class="dropdown-header">Panadería</li>
+						  <li><a href="/productos/pan-tradicional">Pan tradicional</a></li>
+						  <li><a href="/productos/pan-integral">Pan integral</a></li>
+						  <li><a href="/productos/pan-rustico">Pan rústico</a></li>
+						  <li><a href="/productos/pan-especiales">Especiales</a></li>
+					  <li role="presentation" class="divider"></li>
+					  <li role="presentation" class="dropdown-header">Restauración</li>
+						  <li><a href="/productos/restauracion-burger">Burger</a></li>
+						  <li><a href="/productos/restauracion-bocata">Bocata</a></li>
+						  <li><a href="/productos/restauracion-pintxo">Pintxo</a></li>
+					</ul>
+			  </li>
+			  <li><a href="/hosteleria">Hostelería</a></li>
+			  <li><a href="/tiendas">Donde estamos</a></li>
+			  <li><a href="/historia">Historia</a></li>
+			  <li><a href="/contacto">Contacto</a></li>
+		</ul>
+	</div>
 </nav>
