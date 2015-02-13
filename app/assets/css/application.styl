@@ -219,15 +219,18 @@
 			@extends .col-xs-offset-1;
 			@extends .col-xs-10;
 			@extends .col-sm-offset-1;
-			@extends .col-sm-2;
+			@extends .col-sm-4;
 			@extends .col-md-offset-1;
 			@extends .col-md-3;
+			padding-left: 0px;
+			padding-right: 0px;
+
 		}
 		.right {
 			@extends .col-xs-offset-1;
 			@extends .col-xs-10;
 			@extends .col-sm-offset-1;
-			@extends .col-sm-7;
+			@extends .col-sm-6;
 			@extends .col-md-offset-1;
 			@extends .col-md-6;
 			padding-top: 80px;
@@ -239,13 +242,22 @@
 	.inverse-content {
 		@extends .row;
 		.right {
+			@extends .col-xs-offset-1;
+			@extends .col-xs-10;
+			@extends .col-sm-offset-1;
+			@extends .col-sm-2;
+			@extends .col-md-offset-1;
 			@extends .col-md-3;
 			padding-left: 0px;
 			padding-right: 0px;
 		}
 		.left {
+			@extends .col-xs-offset-1;
+			@extends .col-xs-10;
+			@extends .col-sm-offset-1;
+			@extends .col-sm-7;
 			@extends .col-md-offset-1;
-			@extends .col-md-7;
+			@extends .col-md-6;
 			padding-top: 80px;
 		}
 		padding-top: 20px;

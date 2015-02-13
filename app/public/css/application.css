@@ -1626,6 +1626,8 @@ pre code {
 .header .menu,
 .history .content .left,
 .history .content .right,
+.history .inverse-content .right,
+.history .inverse-content .left,
 .page-wrap > .content .block {
   float: left;
 }
@@ -1639,6 +1641,8 @@ pre code {
 .header .menu,
 .history .content .left,
 .history .content .right,
+.history .inverse-content .right,
+.history .inverse-content .left,
 .page-wrap > .content .block {
   width: 83.3333333333333%;
 }
@@ -1784,6 +1788,8 @@ pre code {
 .header .menu,
 .history .content .left,
 .history .content .right,
+.history .inverse-content .right,
+.history .inverse-content .left,
 .page-wrap > .content .block {
   margin-left: 8.3333333333333%;
 }
@@ -1807,6 +1813,8 @@ pre code {
   #highlights .highlight-element,
   .history .content .left,
   .history .content .right,
+  .history .inverse-content .right,
+  .history .inverse-content .left,
   .page-wrap > .content .block {
     float: left;
   }
@@ -1828,24 +1836,26 @@ pre code {
     width: 66.6666666666667%;
   }
   .col-sm-7,
-  .history .content .right {
+  .history .inverse-content .left {
     width: 58.3333333333333%;
   }
-  .col-sm-6 {
+  .col-sm-6,
+  .history .content .right {
     width: 50%;
   }
   .col-sm-5 {
     width: 41.6666666666667%;
   }
   .col-sm-4,
-  #highlights .highlight-element {
+  #highlights .highlight-element,
+  .history .content .left {
     width: 33.3333333333333%;
   }
   .col-sm-3 {
     width: 25%;
   }
   .col-sm-2,
-  .history .content .left {
+  .history .inverse-content .right {
     width: 16.6666666666667%;
   }
   .col-sm-1 {
@@ -1966,6 +1976,8 @@ pre code {
   .header .menu,
   .history .content .left,
   .history .content .right,
+  .history .inverse-content .right,
+  .history .inverse-content .left,
   .page-wrap > .content .block {
     margin-left: 8.3333333333333%;
   }
@@ -2019,12 +2031,12 @@ pre code {
   .page-wrap > .content .datos-contacto li {
     width: 66.6666666666667%;
   }
-  .col-md-7,
-  .history .inverse-content .left {
+  .col-md-7 {
     width: 58.3333333333333%;
   }
   .col-md-6,
-  .history .content .right {
+  .history .content .right,
+  .history .inverse-content .left {
     width: 50%;
   }
   .col-md-5 {
@@ -2166,6 +2178,7 @@ pre code {
   .header .menu,
   .history .content .left,
   .history .content .right,
+  .history .inverse-content .right,
   .history .inverse-content .left,
   .page-wrap > .content .block {
     margin-left: 8.3333333333333%;
@@ -6579,6 +6592,10 @@ button.close {
 .history .content {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.history .content .left {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .history .content .right {
   padding-top: 80px;
