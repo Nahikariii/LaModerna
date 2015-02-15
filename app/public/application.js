@@ -1008,23 +1008,22 @@ var backbone = require("backbone");
 var data = [
     {
 		"title": "Pizza",
-		 //"photo" : "holder.js/140x140",
 		"photo" : "/images/pizza.jpg",
-	    "content":"Wafer tart jelly muffin marzipan. Toffee chupa chups oat cake applicake oat cake jelly beans lollipop cheesecake jelly. Croissant dragée halvah. Gummies pastry chocolate cake caramels jelly dragée chocolate cake icing.",
+	    "content":"¡Nuevo! Acercate a alguna de nuestras tiendas para probar nuestra masa de pizza. Hacer una pizza casera nunca fue tan fácil, sigue nuestras instrucciones y a comer",
 		"continue" : "Leer más",
 		"href": "pizza"
     },
     {
 		"title": "Ofrecemos",
-		"photo" : "/images/pizza.jpg",
+		"photo" : "/images/pan-highlight.jpg",
 		"content" : "Como productores exclusivos de pan nos aseguramos de ofrecer una amplia gama de productos de alta calidad, desde el pan casero de toda la vida hasta panes innovadores con sabores de todo tipo.",
 		"continue" : "Informáte",
 		"href": "hosteleria"
     },
     {
 		"title": "Contactanos",
-		"photo" : "/images/pizza.jpg",
-		"content" : "Si tienes alguna duda sobre alguno de nuestros productos, te gustaría hacernos una sugerencia o simplemente quieres decirnos lo mucho que te gusta alguno de nuestros productos no dudes en ponerte en contacto con nosotros. Estaremos encantados de atenderte.",
+		"photo" : "/images/typing.jpg",
+		"content" : "Si tienes alguna duda sobre alguno de nuestros productos, te gustaría hacernos una sugerencia o simplemente quieres decirnos lo mucho que te gusta alguno .",
 		"continue" : "Leer más",
 		"href": "contacto"
     }
@@ -1138,16 +1137,16 @@ var backbone = require("backbone");
 
 var data = [
     {
-		"title": "Productos artesanales",
+		"title": "Innovación",
 		"photo" : "/images/testpanes.jpg",
 		"active": true,
     },
     {
-		"title": "Matería prima de primera calidad",
-		"photo" : "/images/hornos.jpg",
+		"title": "Diferenciación",
+		"photo" : "/images/slider-panes.jpg",
     },
     {
-		"title": "Muchas cosas",
+		"title": "Calidad",
 		"photo" : "/images/testpan.jpg",
     }
 ]
@@ -1173,7 +1172,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   
 
 
-  return "<div class=\"page-wrap\">\n	<div class=\"header\">\n	</div>\n\n	<div id=\"content-header\">\n	</div>\n\n	<div class=\"content\">\n		<div class=\"block\">\n			<h3 class=\"orange\">Nuestros servicios</h3>\n			Cotton candy sugar plum pudding lemon drops applicake lemon drops dragée cotton candy. Biscuit cotton candy marzipan sweet dragée marshmallow. Tart dessert cotton candy. Tart pudding cheesecake icing sweet roll tart dessert. Bear claw liquorice sesame snaps oat cake pie jelly-o cake gingerbread liquorice. Wafer topping soufflé cheesecake dragée liquorice dragée candy. Biscuit ice cream caramels chupa chups gingerbread dragée chocolate. Halvah marzipan jelly beans.\n		</div>\n\n		<div class=\"block\">\n			<h3 class=\"orange\">Como funciona</h3>\n			Cotton candy sugar plum pudding lemon drops applicake lemon drops dragée cotton candy. Biscuit cotton candy marzipan sweet dragée marshmallow. Tart dessert cotton candy. Tart pudding cheesecake icing sweet roll tart dessert. \n			<img class=\"esquema\" src=\"/images/esquema.jpg\">\n		</div>\n		\n	</div>\n</div>\n\n<footer class=\"site-footer\">\n</footer>\n";
+  return "<div class=\"page-wrap\">\n	<div class=\"header\">\n	</div>\n\n	<div id=\"content-header\">\n	</div>\n\n	<div class=\"content\">\n		<div class=\"block\">\n			<h3 class=\"orange\">Nuestros servicios</h3>\n			Cotton candy sugar plum pudding lemon drops applicake lemon drops dragée cotton candy. Biscuit cotton candy marzipan sweet dragée marshmallow. Tart dessert cotton candy. Tart pudding cheesecake icing sweet roll tart dessert. Bear claw liquorice sesame snaps oat cake pie jelly-o cake gingerbread liquorice. Wafer topping soufflé cheesecake dragée liquorice dragée candy. Biscuit ice cream caramels chupa chups gingerbread dragée chocolate. Halvah marzipan jelly beans.\n		</div>\n\n		<div class=\"block\">\n			<h3 class=\"orange\">Como funciona</h3>\n			<p>Cotton candy sugar plum pudding lemon drops applicake lemon drops dragée cotton candy. Biscuit cotton candy marzipan sweet dragée marshmallow. Tart dessert cotton candy. Tart pudding cheesecake icing sweet roll tart dessert.</p> \n			<div id=\"bussines-video\" class=\"video\">\n				<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/2U4OAwstIy8\" frameborder=\"0\" allowfullscreen></iframe>\n			</div>\n		</div>\n		\n	</div>\n</div>\n\n<footer class=\"site-footer\">\n</footer>\n";
   });
 
 },{"hbsfy/runtime":39}],18:[function(require,module,exports){
@@ -1231,7 +1230,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   
 
 
-  return "<div class=\"page-wrap\">\n	<div class=\"header\">\n	</div>\n\n	<div id=\"content-header\">\n	</div>\n\n	<div class=\"content\">\n\n		<div class=\"block\">\n			<h3 class=\"orange\">No dudes en contactarnos</h3>\n			Cotton candy sugar plum pudding lemon drops applicake lemon drops dragée cotton candy. Biscuit cotton candy marzipan sweet dragée marshmallow. Tart dessert cotton candy. Tart pudding cheesecake icing sweet roll tart dessert. Bear claw liquorice sesame snaps oat cake pie jelly-o cake gingerbread liquorice. Wafer topping soufflé cheesecake dragée liquorice dragée candy. Biscuit ice cream caramels chupa chups gingerbread dragée chocolate. Halvah marzipan jelly beans.\n			<div class=\"datos-contacto\">\n				<ul>\n					<li>\n						<span class=\"glyphicon glyphicon-phone-alt\"></span>\n						<span class=\"phone-number\">914567893</span>\n					</li>\n					<li>\n						<span class=\"glyphicon glyphicon-envelope\"></span>\n						<span class=\"email\"><a href=\"mailto:contacto@panaderialamoderna.es?Subject:Hola\" target=\"_top\">contacto@panaderialamoderna.es</a></span>\n					</li>\n					<li class=\"address-block\">\n						<span class=\"glyphicon glyphicon-home\"></span>\n						<span class=\"address street\">Tejera bidea (Pol. Ind. Belako), Pabellon 23</span>\n						<span class=\"address\">48100 Atela, Mungia</span>\n						<span class=\"address\">Bizkaia</span>\n					</li>\n				</ul>\n			</div>\n		</div>\n\n	</div>\n</div>\n\n<footer class=\"site-footer\">\n</footer>\n\n";
+  return "<div class=\"page-wrap\">\n	<div class=\"header\">\n	</div>\n\n	<div id=\"content-header\">\n	</div>\n\n	<div class=\"content\">\n\n		<div class=\"block\">\n			<h3 class=\"orange\">No dudes en contactarnos</h3>\nSi tienes alguna duda sobre alguno de nuestros productos, te gustaría hacernos una sugerencia o simplemente quieres decirnos lo mucho que te gusta alguno de nuestros panes no dudes en ponerte en contacto con nosotros. Estaremos encantados de escucharte.\n			<div class=\"datos-contacto\">\n				<ul>\n					<li>\n						<span class=\"glyphicon glyphicon-phone-alt\"></span>\n						<span class=\"phone-number\">914567893</span>\n					</li>\n					<li>\n						<span class=\"glyphicon glyphicon-envelope\"></span>\n						<span class=\"email\"><a href=\"mailto:contacto@panaderialamoderna.es?Subject:Hola\" target=\"_top\">contacto@panaderialamoderna.es</a></span>\n					</li>\n					<li class=\"address-block\">\n						<span class=\"glyphicon glyphicon-home\"></span>\n						<span class=\"address street\">Tejera bidea (Pol. Ind. Belako), Pabellon 23</span>\n						<span class=\"address\">48100 Atela, Mungia</span>\n						<span class=\"address\">Bizkaia</span>\n					</li>\n				</ul>\n			</div>\n		</div>\n\n	</div>\n</div>\n\n<footer class=\"site-footer\">\n</footer>\n\n";
   });
 
 },{"hbsfy/runtime":39}],20:[function(require,module,exports){
@@ -1319,7 +1318,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   
 
 
-  return "<nav role=\"navigation\">\n	<ul class=\"nav navbar-nav\">\n		<li class=\"brand orange hidden-xs\">La moderna</li>\n		<li><a href=\"#\">Inicio</a></li>\n		<li><a href=\"contacto\">Contacto</a></li>\n		<li><a href=\"productos/panaderia\">Panadería</a></li>\n	</ul>\n</nav>\n\n";
+  return "<nav role=\"navigation\">\n	<ul class=\"nav navbar-nav\">\n		<li class=\"brand orange hidden-xs\">La moderna</li>\n		<li><a href=\"#\">Inicio</a></li>\n		<li><a href=\"contacto\">Contacto</a></li>\n		<li><a href=\"hosteleria\">Hostelería</a></li>\n	</ul>\n</nav>\n\n";
   });
 
 },{"hbsfy/runtime":39}],23:[function(require,module,exports){
@@ -1384,7 +1383,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   
 
 
-  return "<div class=\"page-wrap\">\n	<div class=\"header\">\n	</div>\n\n	<div class=\"page-title orange\">Historia</div>\n\n	<div class=\"history\">\n		<div class=\"content\">\n			<div class=\"left\">\n				<!-- <img class=\"img-circle\" src= \"holder.js/300x300\"> -->\n				<img class=\"img-circle\" src= \"/images/panes.jpg\">\n			</div>\n			<div class=\"right\">\n				<p>Cupcake ipsum dolor sit. Amet chocolate bar gingerbread dessert chocolate cake danish tootsie roll tiramisu. Biscuit croissant chocolate cake lemon drops chupa chups bonbon pie bonbon donut. Sesame snaps chocolate gummi bears biscuit gummies jelly biscuit. Donut oat cake tart apple pie bonbon cookie dragée. Bonbon dessert wafer lollipop fruitcake halvah caramels. Caramels pudding brownie marshmallow donut. Carrot cake jujubes icing unerdwear.com lemon drops pudding. Sweet roll apple pie croissant soufflé unerdwear.com. Dragée powder pastry unerdwear.com wafer lollipop oat cake. Jelly-o cupcake cake. Pastry danish cheesecake carrot cake applicake marshmallow chocolate cake fruitcake sesame snaps.</p>\n			</div>\n		</div>\n\n		<div class=\"inverse-content\">\n			<div class=\"left\">\n				<p>Cupcake ipsum dolor sit. Amet chocolate bar gingerbread dessert chocolate cake danish tootsie roll tiramisu. Biscuit croissant chocolate cake lemon drops chupa chups bonbon pie bonbon donut. Sesame snaps chocolate gummi bears biscuit gummies jelly biscuit. Donut oat cake tart apple pie bonbon cookie dragée. Bonbon dessert wafer lollipop fruitcake halvah caramels. Caramels pudding brownie marshmallow donut. Carrot cake jujubes icing unerdwear.com lemon drops pudding. Sweet roll apple pie croissant soufflé unerdwear.com. Dragée powder pastry unerdwear.com wafer lollipop oat cake. Jelly-o cupcake cake. Pastry danish cheesecake carrot cake applicake marshmallow chocolate cake fruitcake sesame snaps.</p>\n			</div>\n			<div class=\"right\">\n				<img class=\"img-circle\" src= \"/images/amasa.jpg\">\n			</div>\n		</div>\n\n		<div class=\"content\">\n			<div class=\"left\">\n				<img class=\"img-circle\" src= \"/images/amasadora.jpg\">\n			</div>\n			<div class=\"right\">\n				<p>Cupcake ipsum dolor sit. Amet chocolate bar gingerbread dessert chocolate cake danish tootsie roll tiramisu. Biscuit croissant chocolate cake lemon drops chupa chups bonbon pie bonbon donut. Sesame snaps chocolate gummi bears biscuit gummies jelly biscuit. Donut oat cake tart apple pie bonbon cookie dragée. Bonbon dessert wafer lollipop fruitcake halvah caramels. Caramels pudding brownie marshmallow donut. Carrot cake jujubes icing unerdwear.com lemon drops pudding. Sweet roll apple pie croissant soufflé unerdwear.com. Dragée powder pastry unerdwear.com wafer lollipop oat cake. Jelly-o cupcake cake. Pastry danish cheesecake carrot cake applicake marshmallow chocolate cake fruitcake sesame snaps.</p>\n			</div>\n		</div>\n	</div>\n</div>\n\n<footer class=\"site-footer\">\n</footer>\n";
+  return "<div class=\"page-wrap\">\n	<div class=\"header\">\n	</div>\n\n	<div class=\"page-title orange\">Historia</div>\n\n	<div class=\"history\">\n		<div class=\"content\">\n			<div class=\"left\">\n				<!-- <img class=\"img-circle\" src= \"holder.js/300x300\"> -->\n				<img class=\"img-circle\" src= \"/images/pancasero.jpg\">\n			</div>\n			<div class=\"right\">\n				<p>Panaderia la moderna nace en 1930 de la mano de Julen Beldarrain en un pequeño obrador en Mungia. En los primeros años logra que sus productos, fabricados artesanalmente y con una gran ilusión, vayan abriendo camino en el mercado.</br></br> \nA lo largo de los años la panadería pasa a manos de la segunda generación familiar. El principal objetivo ahora es afianzarse como líderes del sector mediante la constante inversión en medios productivos y desarrollo de productos que generen valor a nuestros clientes. Con este fin se suceden los viajes a ferias internacionales de panadería y pastelería para conocer las novedades en el sector, así como la formación en el extranjero en diferentes áreas.\n				</p>\n			</div>\n		</div>\n\n		<div class=\"inverse-content\">\n			<div class=\"left\">\n				<p>En 2008 debido al fuerte crecimiento experimentado por nuestra empresa y con el fin de satisfacer correctamente las crecientes necesidades de nuestros clientes, decidimos ampliar nuestra capacidad productiva mediante una inversión en una nueva planta productiva con una superficie de 1600m2. </br></br>\nEsta nueva inversión nos ha permitido contar con tecnología más avanzada para cubrir las necesidades de nuestros clientes con la máxima garantía de calidad y servicio, garantizando la cadena de frío a lo largo del proceso de producción. Asimismo hemos podido ampliar sobremanera nuestra gama de productos.\n				</p>\n			</div>\n			<div class=\"right\">\n				<img class=\"img-circle\" src= \"/images/hornos3.jpg\">\n			</div>\n		</div>\n\n		<div class=\"content\">\n			<div class=\"left\">\n				<img class=\"img-circle\" src= \"/images/hornos4.jpg\">\n			</div>\n			<div class=\"right\">\n				<p>A pesar del constante crecimiento de nuestra empresa continuamos ofreciendo el sabor artesano en cada uno de nuestros productos que nos ha hecho acreedores del reconocimiento del mercado como uno de los líderes en fabricación de panes rústicos. </br></br>\nEl futuro de nuestra empresa viene marcado por la satisfacción de las necesidades de nuestros clientes y apoyado por la constante inversión en procesos productivos para cumplir los estándares de calidad más exigentes en el mundo de la alimentos.\n				</p>\n			</div>\n		</div>\n	</div>\n</div>\n\n<footer class=\"site-footer\">\n</footer>\n";
   });
 
 },{"hbsfy/runtime":39}],26:[function(require,module,exports){

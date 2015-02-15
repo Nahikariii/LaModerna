@@ -18,7 +18,7 @@ var data = [
     {
 		"title": "Contactanos",
 		"photo" : "/images/typing.jpg",
-		"content" : "Si tienes alguna duda sobre alguno de nuestros productos, te gustaría hacernos una sugerencia o simplemente quieres decirnos lo mucho que te gusta alguno de nuestros panes no dudes en ponerte en contacto con nosotros. Estaremos encantados de escucharte.",
+		"content" : "Si tienes alguna duda sobre alguno de nuestros productos, te gustaría hacernos una sugerencia o simplemente quieres decirnos lo mucho que te gusta alguno .",
 		"continue" : "Leer más",
 		"href": "contacto"
     }
