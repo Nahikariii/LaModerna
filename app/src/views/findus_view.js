@@ -3,7 +3,7 @@ var HeaderView = require("./header_view");
 var ContentHeaderView = require("./content_header");
 var FooterView = require("./footer_view");
 
-var pagePhoto = "/images/sestaoMODERNA.jpg";
+var pagePhoto = "/images/tienda.jpg";
 
 var shops = [
 	{
