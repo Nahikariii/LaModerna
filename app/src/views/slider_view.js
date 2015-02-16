@@ -3,16 +3,16 @@ var backbone = require("backbone");
 var data = [
     {
 		"title": "Innovación",
-		"photo" : "/images/testpanes.jpg",
+		"photo" : "/images/slide1.jpg",
 		"active": true,
     },
     {
 		"title": "Diferenciación",
-		"photo" : "/images/slider-panes.jpg",
+		"photo" : "/images/slide2.jpg",
     },
     {
 		"title": "Calidad",
-		"photo" : "/images/testpan.jpg",
+		"photo" : "/images/slide3.jpg",
     }
 ]
 

@@ -2019,7 +2019,6 @@ pre code {
     width: 91.6666666666667%;
   }
   .col-md-10,
-  .header .menu,
   .page-wrap > .content .block {
     width: 83.3333333333333%;
   }
@@ -2027,6 +2026,7 @@ pre code {
     width: 75%;
   }
   .col-md-8,
+  .header .menu,
   .map #map_canvas,
   .page-wrap > .content .datos-contacto li {
     width: 66.6666666666667%;
@@ -2171,11 +2171,11 @@ pre code {
     margin-left: 25%;
   }
   .col-md-offset-2,
+  .header .menu,
   .map #map_canvas {
     margin-left: 16.6666666666667%;
   }
   .col-md-offset-1,
-  .header .menu,
   .history .content .left,
   .history .content .right,
   .history .inverse-content .right,
