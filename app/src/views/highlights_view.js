@@ -4,7 +4,7 @@ var data = [
     {
 		"title": "Pizza",
 		"photo" : "/images/pizza.jpg",
-	    "content":"¡Nuevo! Acercate a alguna de nuestras tiendas para probar nuestra masa de pizza. Hacer una pizza casera nunca fue tan fácil, sigue nuestras instrucciones y a comer",
+	    "content":"¡Nuevo! Ahora en nuestras tiendas tambien podras encontrar masa de pizza. No dudes en probarla, hacer una pizza casera nunca fue tan fácil. Nosotros te proporcionamos las instrucciones, sigue los pasos y a comer. ",
 		"continue" : "Leer más",
 		"href": "pizza"
     },
@@ -18,7 +18,7 @@ var data = [
     {
 		"title": "Contactanos",
 		"photo" : "/images/typing.jpg",
-		"content" : "Si tienes alguna duda sobre alguno de nuestros productos, te gustaría hacernos una sugerencia o simplemente quieres decirnos lo mucho que te gusta alguno .",
+		"content": "Si tienes alguna duda sobre alguno de nuestros productos, te gustaría hacernos una sugerencia o simplemente quieres decirnos lo mucho que te gusta alguno de nuestros panes no dudes en ponerte en contacto con nosotros.",
 		"continue" : "Leer más",
 		"href": "contacto"
     }
