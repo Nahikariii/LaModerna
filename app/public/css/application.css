@@ -6564,6 +6564,12 @@ button.close {
   text-transform: capitalize;
   font-size: 60px;
 }
+@media (max-width: 768px) {
+  .content-title {
+    margin-left: 20px;
+    font-size: 45px;
+  }
+}
 .page-title {
   margin-left: 50px;
   text-transform: capitalize;
