@@ -6688,7 +6688,10 @@ ol.labels-list {
 ol.labels-list > li {
   position: relative;
   margin-bottom: 1.5em;
-  padding: 1.5em;
+  padding-bottom: 21px;
+  padding-left: 21px;
+  padding-top: 30px;
+  padding-right: 21px;
   background-color: #e9e7e7;
 }
 ol.labels-list > li:before {
