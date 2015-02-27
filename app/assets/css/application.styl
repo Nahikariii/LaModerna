@@ -287,8 +287,11 @@
 		font-weight: bold;
 		text-decoration: underline;
 	}
-	.video {
-		text-align: center;
+	.video-container {
+		@extends .col-md-offset-2;
+		@extends .col-md-8;
+		@extends .col-sm-offset-1;
+		@extends .col-sm-10;
 	}
 	.datos-contacto {
 		@extends .row;
