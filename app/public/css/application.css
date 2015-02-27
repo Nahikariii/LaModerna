@@ -1604,6 +1604,7 @@ pre code {
 .history .inverse-content .right,
 .history .inverse-content .left,
 .page-wrap > .content .block,
+.page-wrap > .content .video-container,
 .page-wrap > .content .datos-contacto li,
 .business-graph .line-1 {
   position: relative;
@@ -1815,7 +1816,8 @@ pre code {
   .history .content .right,
   .history .inverse-content .right,
   .history .inverse-content .left,
-  .page-wrap > .content .block {
+  .page-wrap > .content .block,
+  .page-wrap > .content .video-container {
     float: left;
   }
   .col-sm-12 {
@@ -1826,7 +1828,8 @@ pre code {
   }
   .col-sm-10,
   .header .menu,
-  .page-wrap > .content .block {
+  .page-wrap > .content .block,
+  .page-wrap > .content .video-container {
     width: 83.3333333333333%;
   }
   .col-sm-9 {
@@ -1978,7 +1981,8 @@ pre code {
   .history .content .right,
   .history .inverse-content .right,
   .history .inverse-content .left,
-  .page-wrap > .content .block {
+  .page-wrap > .content .block,
+  .page-wrap > .content .video-container {
     margin-left: 8.3333333333333%;
   }
   .col-sm-offset-0 {
@@ -2008,6 +2012,7 @@ pre code {
   .history .inverse-content .right,
   .history .inverse-content .left,
   .page-wrap > .content .block,
+  .page-wrap > .content .video-container,
   .page-wrap > .content .datos-contacto li,
   .business-graph .line-1 {
     float: left;
@@ -2028,6 +2033,7 @@ pre code {
   .col-md-8,
   .header .menu,
   .map #map_canvas,
+  .page-wrap > .content .video-container,
   .page-wrap > .content .datos-contacto li {
     width: 66.6666666666667%;
   }
@@ -2172,7 +2178,8 @@ pre code {
   }
   .col-md-offset-2,
   .header .menu,
-  .map #map_canvas {
+  .map #map_canvas,
+  .page-wrap > .content .video-container {
     margin-left: 16.6666666666667%;
   }
   .col-md-offset-1,
@@ -6624,9 +6631,6 @@ button.close {
 .page-wrap > .content a {
   font-weight: bold;
   text-decoration: underline;
-}
-.page-wrap > .content .video {
-  text-align: center;
 }
 .page-wrap > .content .datos-contacto {
   text-align: left;
