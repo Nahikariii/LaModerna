@@ -6768,6 +6768,7 @@ body {
 @media (max-width: 768px) {
   .site-footer nav li {
     display: inline-block;
+    padding-left: 15px;
   }
 }
 .site-footer nav li {
