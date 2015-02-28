@@ -7,11 +7,11 @@ var data = [
 		"active": true,
     },
     {
-		"title": "Diferenciación",
+		"title": "Calidad",
 		"photo" : "/images/slide2.jpg",
     },
     {
-		"title": "Calidad",
+		"title": "Diferenciación",
 		"photo" : "/images/slide3.jpg",
     }
 ]
