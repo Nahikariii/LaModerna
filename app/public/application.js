@@ -2,11 +2,11 @@
 var Handlebars = require("hbsfy/runtime");
 
 Handlebars.registerHelper('shop-block', function(index, action, options) {
-	if (action == 'open' && ( index == 0 || index == 4))
+	if (action == 'open' && ( index == 0 || index == 4 || index == 8))
 	{
 		return options.fn(this);
     }
-	if (action == 'close' && ( index == 3 || index == 7))
+	if (action == 'close' && ( index == 3 || index == 7 || index == 8))
 	{
 		return options.fn(this);
     }
@@ -540,85 +540,135 @@ var FooterView = require("./footer_view");
 var pagePhoto = "/images/find_us_header.jpg";
 
 var shops = [
-	{
-		"title": "Mungia",
-		"address": "C/ Aita Elorriaga 8, 48100",
-		"timetable": "L-V: 7:00-14:30, 16:00-20:30<br> S-D: 8:00-14:00",
-		"telephone": "94 615 63 54",
-	},
-	{
-		"title": "Mungia",
-		"address": "C/ Errekatxu 3, 48100",
-		"timetable": "L-V: 6:30-14:00, 17:00-21:00<br> S-D: 7:30-14:30",
-		"telephone": "94 674 82 07",
-	},
-	{
-		"title": "Derio",
-		"address": "Gernikako Arbola Etorbidea 6, Derio 48160",
-		"timetable": "L-V: 9:00-18:00 <br> S: 9:00-13:00 <br> D: cerrado",
-		"telephone": "941232534",
-	},
-	{
-		"title": "Algorta",
-		"address": "C/ Arene Azpi 4, Algorta 48990 ",
-		"timetable": "L-V: 9:00-18:00 <br> S: 9:00-13:00 <br> D: cerrado",
-		"telephone": "941232534",
-	},
-	{
-		"title": "Gorliz",
-		"address": "C/ Eloisa Artaza Local 3ºG, Gorliz 48630",
-		"timetable": "L-V: 9:00-18:00 <br> S: 9:00-13:00 <br> D: cerrado",
-		"telephone": "941232534",
-	},
-	{
-		"title": "Getxo",
-		"address": "Avd. de los Chopos 35, 48990",
-		"timetable": "L-V: 9:00-18:00 <br> S: 9:00-13:00 <br> D: cerrado",
-		"telephone": "941232534",
-	},
-	{
-		"title": "Bilbao",
-		"address": "C/ Juan de Garay 13, 48003",
-		"timetable": "L-V: 9:00-18:00 <br> S: 9:00-13:00 <br> D: cerrado",
-		"telephone": "941232534",
-	},
-	{
-		"title": "Sestao",
-		"address": "C/ Villar y Villate 8, 48910",
-		"timetable": "L-V: 8:00-14:30, 17:00-21:00<br> S-D: 8:00-15:00",
-		"telephone": "94 496 14 44",
-	}
+    {
+        "title": "Mungia",
+        "address": "C/ Aita Elorriaga 8, 48100",
+        "timetable": "L-V: 7:00-14:30, 16:00-20:30<br> S-D: 8:00-14:00",
+        "telephone": "94 615 63 54",
+        "type": "shop",
+        "lat": "43.353381",
+        "long": "-2.845269",
+    },
+    {
+        "title": "Mungia",
+        "address": "C/ Errekatxu 3, 48100",
+        "timetable": "L-V: 6:30-14:00, 17:00-21:00<br> S-D: 7:30-14:30",
+        "telephone": "94 674 82 07",
+        "type": "shop",
+        "lat": "43.355483",
+        "long": "-2.849091",
+    },
+    {
+        "title": "Derio",
+        "address": "Gernikako Arbola Etorbidea 6, Derio 48160",
+        "timetable": "L-V: 9:00-18:00 <br> S: 9:00-13:00 <br> D: cerrado",
+        "telephone": "941232534",
+        "type": "shop",
+        "lat": "43.292441",
+        "long": "-2.886623",
+    },
+    {
+        "title": "Algorta",
+        "address": "C/ Arene Azpi 4, Algorta 48990 ",
+        "timetable": "L-V: 9:00-18:00 <br> S: 9:00-13:00 <br> D: cerrado",
+        "telephone": "941232534",
+        "type": "shop",
+        "lat": "43.348575",
+        "long": "-3.004309",
+    },
+    {
+        "title": "Gorliz",
+        "address": "C/ Eloisa Artaza Local 3ºG, Gorliz 48630",
+        "timetable": "L-V: 9:00-18:00 <br> S: 9:00-13:00 <br> D: cerrado",
+        "telephone": "941232534",
+        "type": "shop",
+        "lat": "43.413677",
+        "long": "-2.937525",
+    },
+    {
+        "title": "Getxo",
+        "address": "Avd. de los Chopos 35, 48990",
+        "timetable": "L-V: 9:00-18:00 <br> S: 9:00-13:00 <br> D: cerrado",
+        "telephone": "941232534",
+        "type": "shop",
+        "lat": "43.352473",
+        "long": "-3.010238",
+    },
+    {
+        "title": "Bilbao",
+        "address": "C/ Juan de Garay 13, 48003",
+        "timetable": "L-V: 9:00-18:00 <br> S: 9:00-13:00 <br> D: cerrado",
+        "telephone": "941232534",
+        "type": "shop",
+        "lat": "43.254784",
+        "long": "-2.933417",
+    },
+    {
+        "title": "Sestao",
+        "address": "C/ Villar y Villate 8, 48910",
+        "timetable": "L-V: 8:00-14:30, 17:00-21:00<br> S-D: 8:00-15:00",
+        "telephone": "94 496 14 44",
+        "type": "shop",
+        "lat": "43.308674",
+        "long": "-3.006907",
+    },
+    {
+        "title": "Obrador",
+        "address": "Tejera bidea (Pol. Ind. Belako), Pabellon 23",
+        "telephone": "94 674 01 77",
+        "type": "factory",
+        "lat": "43.3399902",
+        "long": "-2.7869898",
+    }
 ];
 
+var marker_icons = {"shop": "images/bread_marker.png", "factory": "images/factory_marker.png"};
+
 var FindUsView = backbone.View.extend({
-	initialize: function(){
-		this.once("renderDone", function() {
-			var script = document.createElement("script");
-			script.type = "text/javascript";
-			script.src = "https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initializeGoogleMaps";
-			document.body.appendChild(script);
-		});
-		this.render();
-	},
-	template: require("../../views/findus.hbs"),
-	render: function(){
-		products = [];
+    initialize: function(){
+        this.once("renderDone", function() {
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = "https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initializeGoogleMaps";
+            document.body.appendChild(script);
+        });
+        this.render();
+    },
+    template: require("../../views/findus.hbs"),
+    render: function(){
+        products = [];
         this.$el.html(this.template({shops: shops}));
-		var headerView = new HeaderView({el: $(".header")});
-		var contentHeader = new ContentHeaderView({el: $("#content-header"), headerText: "Donde estamos", photo: pagePhoto });
+        var headerView = new HeaderView({el: $(".header")});
+        var contentHeader = new ContentHeaderView({el: $("#content-header"), headerText: "Donde estamos", photo: pagePhoto });
         var footer_view = new FooterView({el: $("footer")});
-		this.trigger("renderDone");
-	}
+        this.trigger("renderDone");
+    }
 });
 
 function initializeGoogleMaps() {
-	var mapCanvas = document.getElementById("map_canvas");
-	var mapOptions = {
-		center: new google.maps.LatLng(43.3538162, -2.8465597),
-		zoom: 10,
-		mapTypeId: google.maps.MapTypeId.ROADMAP
-	};
-	var map = new google.maps.Map(mapCanvas, mapOptions);
+    var mapCanvas = document.getElementById("map_canvas");
+    var mapOptions = {
+        center: new google.maps.LatLng(43.334568, -2.901794),
+        zoom: 11,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+    for (var x = 0; x < shops.length; x++) {
+        var shop = shops[x];
+        var latlng = new google.maps.LatLng(shop.lat, shop.long);
+        var marker = new google.maps.Marker({
+            position: latlng,
+            map: map,
+            icon: marker_icons[shop.type],
+            labelContent: x,
+        });
+        console.log(marker);
+        google.maps.event.addListener(marker, 'click', function() {
+            var element_id = 'shop-' + this.labelContent;
+            $('.orange-border').removeClass('orange-border');
+            document.getElementById(element_id).className += " orange-border";
+        });
+    }
 }
 
 window.initializeGoogleMaps = initializeGoogleMaps;
@@ -797,11 +847,11 @@ var data = [
 		"active": true,
     },
     {
-		"title": "Diferenciación",
+		"title": "Calidad",
 		"photo" : "/images/slide2.jpg",
     },
     {
-		"title": "Calidad",
+		"title": "Diferenciación",
 		"photo" : "/images/slide3.jpg",
     }
 ]
@@ -885,7 +935,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   
 
 
-  return "<div class=\"page-wrap\">\n	<div class=\"header\">\n	</div>\n\n	<div id=\"content-header\">\n	</div>\n\n	<div class=\"content\">\n\n		<div class=\"block\">\n			<h3 class=\"orange\">No dudes en contactarnos</h3>\nSi tienes alguna duda sobre alguno de nuestros productos, te gustaría hacernos una sugerencia o simplemente quieres decirnos lo mucho que te gusta alguno de nuestros panes no dudes en ponerte en contacto con nosotros. Estaremos encantados de escucharte.\n			<div class=\"datos-contacto\">\n				<ul>\n					<li>\n						<span class=\"glyphicon glyphicon-phone-alt\"></span>\n						<span class=\"phone-number\">914567893</span>\n					</li>\n					<li>\n						<span class=\"glyphicon glyphicon-envelope\"></span>\n						<span class=\"email\"><a href=\"mailto:contacto@panaderialamoderna.es?Subject:Hola\" target=\"_top\">contacto@panaderialamoderna.es</a></span>\n					</li>\n					<li class=\"address-block\">\n						<span class=\"glyphicon glyphicon-home\"></span>\n						<span class=\"address street\">Tejera bidea (Pol. Ind. Belako), Pabellon 23</span>\n						<span class=\"address\">48100 Atela, Mungia</span>\n						<span class=\"address\">Bizkaia</span>\n					</li>\n				</ul>\n			</div>\n		</div>\n\n	</div>\n</div>\n\n<footer class=\"site-footer\">\n</footer>\n\n";
+  return "<div class=\"page-wrap\">\n	<div class=\"header\">\n	</div>\n\n	<div id=\"content-header\">\n	</div>\n\n	<div class=\"content\">\n\n		<div class=\"block\">\n			<h3 class=\"orange\">No dudes en contactarnos</h3>\nSi tienes alguna duda sobre alguno de nuestros productos, te gustaría hacernos una sugerencia o simplemente quieres decirnos lo mucho que te gusta alguno de nuestros panes no dudes en ponerte en contacto con nosotros. Estaremos encantados de escucharte.\n			<div class=\"datos-contacto\">\n				<ul>\n					<li>\n						<span class=\"glyphicon glyphicon-phone-alt\"></span>\n						<span class=\"phone-number\">94 674 01 77</span>\n					</li>\n					<li>\n						<span class=\"glyphicon glyphicon-envelope\"></span>\n						<span class=\"email\"><a href=\"mailto:contacto@panaderialamoderna.es?Subject:Hola\" target=\"_top\">contacto@panaderialamoderna.es</a></span>\n					</li>\n					<li class=\"address-block\">\n						<span class=\"glyphicon glyphicon-home\"></span>\n						<span class=\"address street\">Tejera bidea (Pol. Ind. Belako), Pabellon 23</span>\n						<span class=\"address\">48100 Atela, Mungia</span>\n						<span class=\"address\">Bizkaia</span>\n					</li>\n				</ul>\n			</div>\n		</div>\n\n	</div>\n</div>\n\n<footer class=\"site-footer\">\n</footer>\n\n";
   });
 
 },{"hbsfy/runtime":39}],20:[function(require,module,exports){
@@ -920,47 +970,49 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
 function program1(depth0,data) {
   
   var buffer = "", stack1, helper, options;
-  buffer += "\n				";
+  buffer += "\n\n            ";
   stack1 = (helper = helpers['shop-block'] || (depth0 && depth0['shop-block']),options={hash:{},inverse:self.noop,fn:self.program(2, program2, data),data:data},helper ? helper.call(depth0, (data == null || data === false ? data : data.index), "open", options) : helperMissing.call(depth0, "shop-block", (data == null || data === false ? data : data.index), "open", options));
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n				<div class=\"shop-element\">\n					<h4>";
+  buffer += "\n\n            <div class=\"shop-element\" id=\"shop-"
+    + escapeExpression(((stack1 = (data == null || data === false ? data : data.index)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "\">\n                <h4>";
   if (helper = helpers.title) { stack1 = helper.call(depth0, {hash:{},data:data}); }
   else { helper = (depth0 && depth0.title); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
   buffer += escapeExpression(stack1)
-    + "</h4>\n					<p>";
+    + "</h4>\n                <p>";
   if (helper = helpers.address) { stack1 = helper.call(depth0, {hash:{},data:data}); }
   else { helper = (depth0 && depth0.address); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
   buffer += escapeExpression(stack1)
-    + "</p>\n					<p>";
+    + "</p>\n                <p>";
   if (helper = helpers.timetable) { stack1 = helper.call(depth0, {hash:{},data:data}); }
   else { helper = (depth0 && depth0.timetable); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "</p>\n					<p>";
+  buffer += "</p>\n                <p>";
   if (helper = helpers.telephone) { stack1 = helper.call(depth0, {hash:{},data:data}); }
   else { helper = (depth0 && depth0.telephone); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
   buffer += escapeExpression(stack1)
-    + "</p>\n				</div>\n				";
+    + "</p>\n            </div>\n\n            ";
   stack1 = (helper = helpers['shop-block'] || (depth0 && depth0['shop-block']),options={hash:{},inverse:self.noop,fn:self.program(4, program4, data),data:data},helper ? helper.call(depth0, (data == null || data === false ? data : data.index), "close", options) : helperMissing.call(depth0, "shop-block", (data == null || data === false ? data : data.index), "close", options));
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n\n		";
+  buffer += "\n\n        ";
   return buffer;
   }
 function program2(depth0,data) {
   
   
-  return "\n					<div class=\"shops-block\">\n				";
+  return "\n                <div class=\"shops-block\">\n            ";
   }
 
 function program4(depth0,data) {
   
   
-  return "\n					</div>\n				";
+  return "\n                </div>\n            ";
   }
 
-  buffer += "<div class=\"page-wrap\">\n	<div class=\"header\">\n	</div>\n\n	<div id=\"content-header\">\n	</div>\n\n	<div class=\"map\">\n		<div id=\"map_canvas\">\n		</div>\n	</div>\n\n	<div class=\"shops\">\n		";
+  buffer += "<div class=\"page-wrap\">\n    <div class=\"header\">\n    </div>\n\n    <div id=\"content-header\">\n    </div>\n\n    <div class=\"map\">\n        <div id=\"map_canvas\">\n        </div>\n    </div>\n\n    <div class=\"shops\">\n        ";
   stack1 = helpers.each.call(depth0, (depth0 && depth0.shops), {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n	</div>\n</div>\n\n<footer class=\"site-footer\">\n</footer>\n";
+  buffer += "\n    </div>\n</div>\n\n<footer class=\"site-footer\">\n</footer>\n";
   return buffer;
   });
 
