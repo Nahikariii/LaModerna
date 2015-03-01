@@ -78,14 +78,14 @@ var shops = [
         "lat": "43.308674",
         "long": "-3.006907",
     },
-//    {
-//        "title": "Obrador",
-//        "address": "Tejera bidea (Pol. Ind. Belako), Pabellon 23",
-//        "telephone": "94 674 01 77",
-//        "type": "factory",
-//        "lat": "43.3399902",
-//        "long": "-2.7869898",
-//    }
+    {
+        "title": "Obrador",
+        "address": "Tejera bidea (Pol. Ind. Belako), Pabellon 23",
+        "telephone": "94 674 01 77",
+        "type": "factory",
+        "lat": "43.3399902",
+        "long": "-2.7869898",
+    }
 ];
 
 var marker_icons = {"shop": "images/bread_marker.png", "factory": "images/factory_marker.png"};
