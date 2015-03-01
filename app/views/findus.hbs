@@ -1,32 +1,35 @@
 <div class="page-wrap">
-	<div class="header">
-	</div>
+    <div class="header">
+    </div>
 
-	<div id="content-header">
-	</div>
+    <div id="content-header">
+    </div>
 
-	<div class="map">
-		<div id="map_canvas">
-		</div>
-	</div>
+    <div class="map">
+        <div id="map_canvas">
+        </div>
+    </div>
 
-	<div class="shops">
-		{{#each shops}}
-				{{#shop-block @index "open"}}
-					<div class="shops-block">
-				{{/shop-block}}
-				<div class="shop-element" id="shop-{{ @index }}">
-					<h4>{{ title }}</h4>
-					<p>{{ address }}</p>
-					<p>{{{ timetable }}}</p>
-					<p>{{ telephone }}</p>
-				</div>
-				{{#shop-block @index "close"}}
-					</div>
-				{{/shop-block}}
+    <div class="shops">
+        {{#each shops}}
 
-		{{/each}}
-	</div>
+            {{#shop-block @index "open"}}
+                <div class="shops-block">
+            {{/shop-block}}
+
+            <div class="shop-element" id="shop-{{ @index }}">
+                <h4>{{ title }}</h4>
+                <p>{{ address }}</p>
+                <p>{{{ timetable }}}</p>
+                <p>{{ telephone }}</p>
+            </div>
+
+            {{#shop-block @index "close"}}
+                </div>
+            {{/shop-block}}
+
+        {{/each}}
+    </div>
 </div>
 
 <footer class="site-footer">
