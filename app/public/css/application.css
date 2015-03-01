@@ -6560,6 +6560,9 @@ button.close {
   text-align: center;
   width: 80%;
 }
+.orange-border {
+  border: 2px dashed #f88017;
+}
 .img-circle {
   border: 2px dashed #908988;
 }
