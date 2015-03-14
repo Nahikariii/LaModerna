@@ -9,6 +9,6 @@ ADD robots.txt /usr/share/nginx/html/robots.txt
 
 ADD default.conf /etc/nginx/conf.d/default.conf
 
-RUN sed -i 's/localhost/panaderia.nahikari.me/g' /etc/nginx/conf.d/default.conf
+RUN sed -i 's/localhost/www.panaderialamoderna.es/g' /etc/nginx/conf.d/default.conf
 RUN chmod 777 -R /usr/share/nginx/html
 RUN chown www-data:www-data -R /usr/share/nginx/html
