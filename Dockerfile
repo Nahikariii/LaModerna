@@ -5,7 +5,6 @@ ADD app/public/images /usr/share/nginx/html/images
 ADD app/public/js /usr/share/nginx/html/js
 ADD app/public/application.js /usr/share/nginx/html/application.js
 ADD app/public/index.html /usr/share/nginx/html/index.html
-ADD robots.txt /usr/share/nginx/html/robots.txt
 
 ADD default.conf /etc/nginx/conf.d/default.conf
 

@@ -650,7 +650,6 @@ function initializeGoogleMaps() {
             icon: marker_icons[shop.type],
             labelContent: x,
         });
-        console.log(marker);
         google.maps.event.addListener(marker, 'click', function() {
             var element_id = 'shop-' + this.labelContent;
             $('.orange-border').removeClass('orange-border');

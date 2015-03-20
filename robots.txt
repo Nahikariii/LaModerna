@@ -1,3 +1,0 @@
-# TODO: Undo this. SPC
-User-agent: *
-Disallow: /
