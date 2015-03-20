@@ -25,7 +25,16 @@
 }
 
 .header {
-    @extends .row;
+   @extends .row;
+
+   @media (min-width: 1000px){
+        #logo.white {
+            content: url("../images/white_logo.png")
+        }
+        #logo.orange {
+            content: url("../images/orange_logo.png")
+        }
+    }
    .menu {
 		@extends .col-xs-offset-1;
 		@extends .col-xs-10;

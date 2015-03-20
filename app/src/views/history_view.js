@@ -11,6 +11,8 @@ var HistoryView = backbone.View.extend({
         this.$el.html(this.template());
 		var header_view = new HeaderView({el: $(".header")});
         var footer_view = new FooterView({el: $("footer")});
+        $('#logo').removeClass('white');
+        $('#logo').addClass('orange');
 	}
 });
 

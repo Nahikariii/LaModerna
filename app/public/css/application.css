@@ -6452,6 +6452,14 @@ button.close {
   z-index: 99;
   width: 100%;
 }
+@media (min-width: 1000px) {
+  .header #logo.white {
+    content: url("../images/white_logo.png");
+  }
+  .header #logo.orange {
+    content: url("../images/orange_logo.png");
+  }
+}
 @media (min-width: 768px) {
   .header .menu .navbar-header .navbar-brand {
     display: none;
