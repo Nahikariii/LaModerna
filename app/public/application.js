@@ -748,6 +748,8 @@ var HistoryView = backbone.View.extend({
         this.$el.html(this.template());
 		var header_view = new HeaderView({el: $(".header")});
         var footer_view = new FooterView({el: $("footer")});
+        $('#logo').removeClass('white');
+        $('#logo').addClass('orange');
 	}
 });
 
@@ -1025,7 +1027,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   
 
 
-  return "<div id=\"menu\" class=\"menu\">\n\n</div>\n";
+  return "<img id='logo' class='white'></img>\n<div id=\"menu\" class=\"menu\">\n\n</div>\n";
   });
 
 },{"hbsfy/runtime":39}],24:[function(require,module,exports){
