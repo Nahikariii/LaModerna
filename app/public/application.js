@@ -737,6 +737,9 @@ module.exports = HighlightsView;
 var backbone = require("backbone");
 var HeaderView = require("./header_view");
 var FooterView = require("./footer_view");
+var ContentHeaderView = require("./content_header");
+
+var pagePhoto = "/images/fabrica.jpg";
 
 var HistoryView = backbone.View.extend({
 	initialize: function(){
@@ -746,15 +749,14 @@ var HistoryView = backbone.View.extend({
 	render: function(){
         this.$el.html(this.template());
 		var header_view = new HeaderView({el: $(".header")});
+		var contentHeader = new ContentHeaderView({el: $("#content-header"), headerText: "Historia", photo: pagePhoto });
         var footer_view = new FooterView({el: $("footer")});
-        $('#logo').removeClass('white');
-        $('#logo').addClass('orange');
 	}
 });
 
 module.exports = HistoryView;
 
-},{"../../views/history.hbs":25,"./footer_view":9,"./header_view":10,"backbone":30}],13:[function(require,module,exports){
+},{"../../views/history.hbs":25,"./content_header":7,"./footer_view":9,"./header_view":10,"backbone":30}],13:[function(require,module,exports){
 var backbone = require("backbone");
 var HeaderView = require("./header_view");
 var SliderView = require("./slider_view");
@@ -819,7 +821,7 @@ var pizzaView = backbone.View.extend({
         this.$el.html(this.template());
 		var headerView = new HeaderView({el: $(".header")});
 		var contentHeader = new ContentHeaderView({el: $("#content-header"), headerText: "Pizza", photo: pagePhoto });
-        var footer_view = new FooterView({el: $("footer")});
+        var footerView = new FooterView({el: $("footer")});
 	}
 });
 
@@ -1079,7 +1081,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   
 
 
-  return "<div class=\"page-wrap\">\n	<div class=\"header\">\n	</div>\n\n	<div class=\"page-title orange\">Historia</div>\n\n	<div class=\"history\">\n		<div class=\"content\">\n			<div class=\"left\">\n				<!-- <img class=\"img-circle\" src= \"holder.js/300x300\"> -->\n				<img class=\"img-circle\" src= \"/images/pancasero.jpg\">\n			</div>\n			<div class=\"right\">\n				<p>Panaderia la moderna nace en 1930 de la mano de Julen Beldarrain en un pequeño obrador en Mungia. En los primeros años logra que sus productos, fabricados artesanalmente y con una gran ilusión, vayan abriendo camino en el mercado.</br></br> \nA lo largo de los años la panadería pasa a manos de la segunda generación familiar. El principal objetivo ahora es afianzarse como líderes del sector mediante la constante inversión en medios productivos y desarrollo de productos que generen valor a nuestros clientes. Con este fin se suceden los viajes a ferias internacionales de panadería y pastelería para conocer las novedades en el sector, así como la formación en el extranjero en diferentes áreas.\n				</p>\n			</div>\n		</div>\n\n		<div class=\"inverse-content\">\n			<div class=\"left\">\n				<p>En 2008 debido al fuerte crecimiento experimentado por nuestra empresa y con el fin de satisfacer correctamente las crecientes necesidades de nuestros clientes, decidimos ampliar nuestra capacidad productiva mediante una inversión en una nueva planta productiva con una superficie de 1600m2. </br></br>\nEsta nueva inversión nos ha permitido contar con tecnología más avanzada para cubrir las necesidades de nuestros clientes con la máxima garantía de calidad y servicio, garantizando la cadena de frío a lo largo del proceso de producción. Asimismo hemos podido ampliar sobremanera nuestra gama de productos.\n				</p>\n			</div>\n			<div class=\"right\">\n				<img class=\"img-circle\" src= \"/images/hornos3.jpg\">\n			</div>\n		</div>\n\n		<div class=\"content\">\n			<div class=\"left\">\n				<img class=\"img-circle\" src= \"/images/hornos4.jpg\">\n			</div>\n			<div class=\"right\">\n				<p>A pesar del constante crecimiento de nuestra empresa continuamos ofreciendo el sabor artesano en cada uno de nuestros productos que nos ha hecho acreedores del reconocimiento del mercado como uno de los líderes en fabricación de panes rústicos. </br></br>\nEl futuro de nuestra empresa viene marcado por la satisfacción de las necesidades de nuestros clientes y apoyado por la constante inversión en procesos productivos para cumplir los estándares de calidad más exigentes en el mundo de la alimentos.\n				</p>\n			</div>\n		</div>\n	</div>\n</div>\n\n<footer class=\"site-footer\">\n</footer>\n";
+  return "<div class=\"page-wrap\">\n	<div class=\"header\">\n	</div>\n\n    <div id=\"content-header\">\n    </div>\n\n	<div class=\"history\">\n		<div class=\"content\">\n			<div class=\"left\">\n				<!-- <img class=\"img-circle\" src= \"holder.js/300x300\"> -->\n				<img class=\"img-circle\" src= \"/images/pancasero.jpg\">\n			</div>\n			<div class=\"right\">\n				<p>Panaderia la moderna nace en 1930 de la mano de Julen Beldarrain en un pequeño obrador en Mungia. En los primeros años logra que sus productos, fabricados artesanalmente y con una gran ilusión, vayan abriendo camino en el mercado.</br></br> \nA lo largo de los años la panadería pasa a manos de la segunda generación familiar. El principal objetivo ahora es afianzarse como líderes del sector mediante la constante inversión en medios productivos y desarrollo de productos que generen valor a nuestros clientes. Con este fin se suceden los viajes a ferias internacionales de panadería y pastelería para conocer las novedades en el sector, así como la formación en el extranjero en diferentes áreas.\n				</p>\n			</div>\n		</div>\n\n		<div class=\"inverse-content\">\n			<div class=\"left\">\n				<p>En 2008 debido al fuerte crecimiento experimentado por nuestra empresa y con el fin de satisfacer correctamente las crecientes necesidades de nuestros clientes, decidimos ampliar nuestra capacidad productiva mediante una inversión en una nueva planta productiva con una superficie de 1600m2. </br></br>\nEsta nueva inversión nos ha permitido contar con tecnología más avanzada para cubrir las necesidades de nuestros clientes con la máxima garantía de calidad y servicio, garantizando la cadena de frío a lo largo del proceso de producción. Asimismo hemos podido ampliar sobremanera nuestra gama de productos.\n				</p>\n			</div>\n			<div class=\"right\">\n				<img class=\"img-circle\" src= \"/images/hornos3.jpg\">\n			</div>\n		</div>\n\n		<div class=\"content\">\n			<div class=\"left\">\n				<img class=\"img-circle\" src= \"/images/hornos4.jpg\">\n			</div>\n			<div class=\"right\">\n				<p>A pesar del constante crecimiento de nuestra empresa continuamos ofreciendo el sabor artesano en cada uno de nuestros productos que nos ha hecho acreedores del reconocimiento del mercado como uno de los líderes en fabricación de panes rústicos. </br></br>\nEl futuro de nuestra empresa viene marcado por la satisfacción de las necesidades de nuestros clientes y apoyado por la constante inversión en procesos productivos para cumplir los estándares de calidad más exigentes en el mundo de la alimentos.\n				</p>\n			</div>\n		</div>\n	</div>\n</div>\n\n<footer class=\"site-footer\">\n</footer>\n";
   });
 
 },{"hbsfy/runtime":39}],26:[function(require,module,exports){

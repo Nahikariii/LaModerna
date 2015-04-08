@@ -24,7 +24,7 @@ var pizzaView = backbone.View.extend({
         this.$el.html(this.template());
 		var headerView = new HeaderView({el: $(".header")});
 		var contentHeader = new ContentHeaderView({el: $("#content-header"), headerText: "Pizza", photo: pagePhoto });
-        var footer_view = new FooterView({el: $("footer")});
+        var footerView = new FooterView({el: $("footer")});
 	}
 });
 
